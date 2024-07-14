@@ -1,0 +1,304 @@
+ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Plasma Hub",
+	LoadingTitle = "Loading",
+	LoadingSubtitle = "Made by PlasmaV using Rayfield",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "PlasmaV Universal"
+	},
+	Discord = {
+		Enabled = true,
+		Invite = "pfyWEm4uyS", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+		RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "PlasmaV Hub Key System",
+		Subtitle = "Join our discord to gain access to the key!",
+		Note = "https://discord.gg/pfyWEm4uyS",
+		FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = {"https://pastebin.com/raw/BSheLKnk"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+	}
+})
+
+Rayfield:Notify({
+	Title = "Plasma Hub Executed successfully",
+	Content = "Remember to always use an alt while exploiting, stay safe!",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "Cool",
+			Callback = function()
+				print("The user tapped Okay!")
+			end
+		},
+	},
+})
+
+-- MAIN TAB
+
+local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+
+local Label = MainTab:CreateLabel("This script is in progress and many features are planned to be added - Plasma Team.")
+
+-- UNIVERSAL TAB
+
+local UniTab = Window:CreateTab("Universal", 4483362458) -- Title, Image
+local UniSection = UniTab:CreateSection("Local Player")
+
+local Input = UniTab:CreateInput({
+	Name = "Walkspeed (16)",
+	PlaceholderText = "1-500",
+	RemoveTextAfterFocusLost = true,
+	Callback = function(Text)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+	end,
+})
+
+local Input = UniTab:CreateInput({
+	Name = "Jump Power (50)",
+	PlaceholderText = "1-500",
+	RemoveTextAfterFocusLost = true,
+	Callback = function(Text)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Text)
+	end,
+})
+
+-- UNIVERSAL SCRIPTS
+
+local UniSection = UniTab:CreateSection("Universal Scripts")
+
+local Button = UniTab:CreateButton({
+	Name = "DomainX (Custom Version soon)",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "In Game Executor",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GamingBears/Scripts/main/InGameExecutor'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "All Emotes",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/9dLpXWt1'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Unnamed ESP",
+	Callback = function()
+		pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Click TP",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/vdLumqAq'))()
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Btools",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/syqWRnHC'))()
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Fullbright",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/tePZ6ke3'))()
+	end,
+})
+
+local Button = UniTab:CreateButton({
+	Name = "Inf Jump (V to toggle)",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/vp25QVYP'))()
+	end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Script Hub
+local ScriptTab = Window:CreateTab("Script Hub", 4483362458) -- Title, Image
+local ScriptSection = ScriptTab:CreateSection("Games")
+
+
+local Button = ScriptTab:CreateButton({
+	Name = "Decaying winter CLOSES PLASMA HUB! DO THIS LAST!(key: Limbo Lust all gone.)",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/sasquatchhtv/SasHub/main/DWScriptFree'),true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Hellmet ESP (Moving to Script Hub)",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Naval Warefare (2 Scripts)",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/CYWenD1T'))()
+		loadstring(game:HttpGet('https://pastebin.com/raw/vr5DGzEX'))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Arsenal",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/xYwLY6hj"))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Bedwars",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "MM2 (NOT WORKING)",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/gFqUJyy8'),true))()
+	end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- EXPERIMENTAL TAB
+
+local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
+local TestSection = TestTab:CreateSection("Features")
+
+local Toggle = TestTab:CreateToggle({
+	Name = "Toggle Test",
+	CurrentValue = false,
+	Flag = "ToggleTest", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		print("toggle on") -- The function that takes place when the toggle is pressed
+	end,
+})
+
+local Dropdown = TestTab:CreateDropdown({
+	Name = "Dropdown Test",
+	Options = {"Option 1","Option 2"},
+	CurrentOption = {"Option 1"},
+	MultipleOptions = false,
+	Flag = "Dropdowntest", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Option)
+		-- The function that takes place when the selected option is changed
+		-- The variable (Option) is a table of strings for the current selected options
+	end,
+})
+
+local Button = TestTab:CreateButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = TestTab:CreateButton({
+	Name = "Print Test",
+	Callback = function()
+		print("Execution Working")
+	end,
+})
+
+local Button = TestTab:CreateButton({
+	Name = "Notify",
+	Callback = function()
+		Rayfield:Notify({
+			Title = "Notification Title",
+			Content = "Notification Content",
+			Duration = 6.5,
+			Image = 4483362458,
+			Actions = { -- Notification Buttons
+				Ignore = {
+					Name = "Okay!",
+					Callback = function()
+						print("The user tapped Okay!")
+					end
+				},
+			},
+		})
+	end,
+})
+
+local ColorPicker = TestTab:CreateColorPicker({
+	Name = "Color Picker",
+	Color = Color3.fromRGB(255,255,255),
+	Flag = "ColorPickerTest", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		-- The function that takes place every time the color picker is moved/changed
+		-- The variable (Value) is a Color3fromRGB value based on which color is selected
+	end
+})
+
+local Input = TestTab:CreateInput({
+	Name = "Input Test",
+	PlaceholderText = "Input Placeholder",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Text)
+		print("Changed")-- The function that takes place when the input is changed
+		print("Something")-- The variable (Text) is a string for the value in the text box
+	end,
+})
+
+
+local Button = TestTab:CreateButton({
+	Name = "Universal Hub",
+	Callback = function()
+--		premium_key = "none";
+		loadstring(game:HttpGet('https://zade.insane.rip/p/raw/5wf8db13y2'))()
+	end,
+})
+
+print("Executed")
