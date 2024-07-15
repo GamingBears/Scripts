@@ -198,6 +198,12 @@ local Button = ScriptTab:CreateButton({
 	end,
 })
 
+local Button = ScriptTab:CreateButton({
+	Name = "Sandhurst Military Academy",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ExamV1/Sandhurst-Military-Academy-Script/main/SandhurstMilitaryScript.lua'),true))()
+	end,
+})
 
 
 
