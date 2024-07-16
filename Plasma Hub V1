@@ -21,24 +21,9 @@ local Window = Rayfield:CreateWindow({
 		Note = "https://discord.gg/pfyWEm4uyS",
 		FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
 		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-		GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		GrabKeyFromSite = true,
 		Key = {"https://pastebin.com/raw/BSheLKnk"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
 	}
-})
-
-Rayfield:Notify({
-	Title = "Plasma Hub Executed successfully",
-	Content = "Remember to always use an alt while exploiting, stay safe!",
-	Duration = 6.5,
-	Image = 4483362458,
-	Actions = { -- Notification Buttons
-		Ignore = {
-			Name = "Cool",
-			Callback = function()
-				print("The user tapped Okay!")
-			end
-		},
-	},
 })
 
 -- MAIN TAB
@@ -46,7 +31,9 @@ Rayfield:Notify({
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
-local Label = MainTab:CreateLabel("This script is in progress and many features are planned to be added - Plasma Team.")
+local Label = MainTab:CreateLabel("This script is in beta and many features are planned to be added - Plasma Team.")
+
+local Label = MainTab:CreateLabel("Coming soon: Local player tab, more scripts")
 
 -- UNIVERSAL TAB
 
@@ -192,9 +179,9 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "MM2 (NOT WORKING)",
+	Name = "Break In 1",
 	Callback = function()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/gFqUJyy8'),true))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/JxA64gTB", true))()
 	end,
 })
 
@@ -222,6 +209,21 @@ local Button = ScriptTab:CreateButton({
 
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
 local TestSection = TestTab:CreateSection("Features")
+
+Rayfield:Notify({
+	Title = "NOTICE:",
+	Content = "This Tab is used for testing scripts, putting detected/broken scripts and testing features. Thanks for understanding",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "Okay",
+			Callback = function()
+				print("Okay!")
+			end
+		},
+	},
+})
 
 local Toggle = TestTab:CreateToggle({
 	Name = "Toggle Test",
@@ -307,4 +309,26 @@ local Button = TestTab:CreateButton({
 	end,
 })
 
+local Button = ScriptTab:CreateButton({
+	Name = "MM2 (NOT WORKING)",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/gFqUJyy8'),true))()
+	end,
+})
+
 print("Executed")
+
+Rayfield:Notify({
+	Title = "Plasma Hub Executed successfully",
+	Content = "Remember to always use an alt while exploiting, stay safe!",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "Cool",
+			Callback = function()
+				print("The user tapped Okay!")
+			end
+		},
+	},
+})
