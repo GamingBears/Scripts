@@ -1,6 +1,6 @@
- local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/ArrayField/main/Source.lua'))()
 
-local Window = Rayfield:CreateWindow({
+local Window = ArrayField:CreateWindow({
 	Name = "Plasma Hub",
 	LoadingTitle = "Loading",
 	LoadingSubtitle = "Made by PlasmaV using Rayfield",
@@ -210,7 +210,7 @@ local Button = ScriptTab:CreateButton({
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
 local TestSection = TestTab:CreateSection("Features")
 
-Rayfield:Notify({
+ArrayField:Notify({
 	Title = "NOTICE:",
 	Content = "This Tab is used for testing scripts, putting detected/broken scripts and testing features. Thanks for understanding",
 	Duration = 6.5,
@@ -309,16 +309,14 @@ local Button = TestTab:CreateButton({
 	end,
 })
 
-local Button = ScriptTab:CreateButton({
+local Button = TestTab:CreateButton({
 	Name = "MM2 (NOT WORKING)",
 	Callback = function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/gFqUJyy8'),true))()
 	end,
 })
 
-print("Executed")
-
-Rayfield:Notify({
+Arrayfield:Notify({
 	Title = "Plasma Hub Executed successfully",
 	Content = "Remember to always use an alt while exploiting, stay safe!",
 	Duration = 6.5,
