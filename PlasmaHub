@@ -188,7 +188,7 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "Break In 1",
+	Name = "Break In 1 (Press J for swat in lobby)",
 	Callback = function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/JxA64gTB", true))()
 	end,
