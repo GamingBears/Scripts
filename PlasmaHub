@@ -35,11 +35,11 @@ local Label = MainTab:CreateLabel("This script is in beta and many features are 
 
 local Label = MainTab:CreateLabel("Coming soon: Local player tab, more scripts")
 
--- UNIVERSAL TAB
+-- LOCAL PLAYER
 
 local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
 
-local lclSection = UniTab:CreateSection("Local Player")
+local lclSection = lclTab:CreateSection("Universal")
 
 local Input = lclTab:CreateInput({
 	Name = "Walkspeed (16)",
@@ -70,7 +70,7 @@ local Button = lclTab:CreateButton({
 -- UNIVERSAL TAB
 
 local UniTab = Window:CreateTab("Universal", 4483362458) -- Title, Image
-local UniSection = UniTab:CreateSection("Universal")
+local UniSection = UniTab:CreateSection("Universal Scripts")
 
 -- UNIVERSAL SCRIPTS
 
