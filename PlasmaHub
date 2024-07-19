@@ -31,7 +31,7 @@ local Window = ArrayField:CreateWindow({
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
-local Label = MainTab:CreateLabel("Beta V1")
+local Label = MainTab:CreateLabel("Beta V1. Press L to destroy UI")
 
 local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
