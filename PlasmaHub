@@ -37,10 +37,11 @@ local Label = MainTab:CreateLabel("Coming soon: Local player tab, more scripts")
 
 -- UNIVERSAL TAB
 
-local UniTab = Window:CreateTab("Universal", 4483362458) -- Title, Image
-local UniSection = UniTab:CreateSection("Local Player")
+local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
 
-local Input = UniTab:CreateInput({
+local lclSection = UniTab:CreateSection("Local Player")
+
+local Input = lclTab:CreateInput({
 	Name = "Walkspeed (16)",
 	PlaceholderText = "1-500",
 	RemoveTextAfterFocusLost = true,
@@ -49,7 +50,7 @@ local Input = UniTab:CreateInput({
 	end,
 })
 
-local Input = UniTab:CreateInput({
+local Input = lclTab:CreateInput({
 	Name = "Jump Power (50)",
 	PlaceholderText = "1-500",
 	RemoveTextAfterFocusLost = true,
@@ -57,6 +58,19 @@ local Input = UniTab:CreateInput({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Text)
 	end,
 })
+
+local Button = lclTab:CreateButton({
+	Name = "Rejoin",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+	end,
+})
+
+
+-- UNIVERSAL TAB
+
+local UniTab = Window:CreateTab("Universal", 4483362458) -- Title, Image
+local UniSection = UniTab:CreateSection("Universal")
 
 -- UNIVERSAL SCRIPTS
 
@@ -319,9 +333,8 @@ local Button = TestTab:CreateButton({
 })
 
 local Button = TestTab:CreateButton({
-	Name = "Universal Hub",
+	Name = "Universal Hub2",
 	Callback = function()
---		premium_key = "none";
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader'))()
 	end,
 })
