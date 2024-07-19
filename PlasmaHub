@@ -152,7 +152,7 @@ local ScriptSection = ScriptTab:CreateSection("Games")
 
 
 local Button = ScriptTab:CreateButton({
-	Name = "Decaying winter CLOSES PLASMA HUB! DO THIS LAST!(key: Limbo Lust all gone.)",
+	Name = "Decaying winter (key: Limbo Lust all gone.)",
 	Callback = function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/sasquatchhtv/SasHub/main/DWScriptFree'),true))()
 	end,
