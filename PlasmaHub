@@ -35,6 +35,17 @@ local Label = MainTab:CreateLabel("Beta V1. Press L to destroy UI")
 
 local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
+local Keybind = MainTab:CreateKeybind({
+   Name = "Destroy UI",
+   CurrentKeybind = "]",
+   HoldToInteract = false,
+   Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Keybind)
+   ArrayField:Destroy()
+   -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
+   end,
+})
+
 -- LOCAL PLAYER
 
 local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
@@ -238,17 +249,6 @@ local Toggle = TestTab:CreateToggle({
 	end,
 })
 
-local Keybind = lclTab:CreateKeybind({
-   Name = "Keybind Example",
-   CurrentKeybind = "K",
-   HoldToInteract = false,
-   Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Keybind)
-   print("Something")  -- The function that takes place when the keybind is pressed
-   print("else")  -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
-   end,
-})
-
 local Dropdown = TestTab:CreateDropdown({
 	Name = "Dropdown Test",
 	Options = {"Option 1","Option 2"},
@@ -352,16 +352,3 @@ ArrayField:Notify({
 		},
 	},
 })
-
-
-local UIS = game:GetService("UserInputService")
- 
-UIS.InputBegan:Connect(function(input)
- if input.UserInputType == Enum.UserInputType.Keyboard then
-  if input.KeyCode == Enum.KeyCode.L then
-   
-ArrayField:Destroy()
- 
-  end
- end
-end)
