@@ -3,16 +3,16 @@ local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI
 local Window = ArrayField:CreateWindow({
 	Name = "Plasma Hub",
 	LoadingTitle = "Loading",
-	LoadingSubtitle = "Made by PlasmaV using Rayfield",
+	LoadingSubtitle = "Made by PlasmaV using Arrayfield",
 	ConfigurationSaving = {
 		Enabled = true,
-		FolderName = nil, -- Create a custom folder for your hub/game
+		FolderName = nil,
 		FileName = "PlasmaV Universal"
 	},
 	Discord = {
 		Enabled = true,
-		Invite = "pfyWEm4uyS", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
-		RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+		Invite = "pfyWEm4uyS",
+		RememberJoins = true
 	},
 	KeySystem = false, -- Set this to true to use our key system
 	KeySettings = {
@@ -65,7 +65,7 @@ local UniSection = UniTab:CreateSection("Universal Scripts")
 local Button = UniTab:CreateButton({
 	Name = "DomainX (Custom Version soon)",
 	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))() -- The function that takes place when the button is pressed
+		loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))()
 	end,
 })
 
@@ -315,6 +315,14 @@ local Button = TestTab:CreateButton({
 	Callback = function()
 --		premium_key = "none";
 		loadstring(game:HttpGet('https://zade.insane.rip/p/raw/5wf8db13y2'))()
+	end,
+})
+
+local Button = TestTab:CreateButton({
+	Name = "Universal Hub",
+	Callback = function()
+--		premium_key = "none";
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader'))()
 	end,
 })
 
