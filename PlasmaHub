@@ -341,3 +341,16 @@ ArrayField:Notify({
 		},
 	},
 })
+
+
+local UIS = game:GetService("UserInputService")
+ 
+UIS.InputBegan:Connect(function(input)
+ if input.UserInputType == Enum.UserInputType.Keyboard then
+  if input.KeyCode == Enum.KeyCode.L then
+   
+ArrayField:Destroy()
+ 
+  end
+ end
+end)
