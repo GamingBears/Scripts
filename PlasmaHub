@@ -31,9 +31,9 @@ local Window = ArrayField:CreateWindow({
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
-local Label = MainTab:CreateLabel("This script is in beta and many features are planned to be added - Plasma Team.")
+local Label = MainTab:CreateLabel("Beta V1")
 
-local Label = MainTab:CreateLabel("Coming soon: Local player tab, more scripts")
+local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
 -- LOCAL PLAYER
 
