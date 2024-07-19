@@ -272,7 +272,7 @@ local Button = TestTab:CreateButton({
 local Button = TestTab:CreateButton({
 	Name = "Notify",
 	Callback = function()
-		Rayfield:Notify({
+		ArrayField:Notify({
 			Title = "Notification Title",
 			Content = "Notification Content",
 			Duration = 6.5,
