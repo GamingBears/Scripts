@@ -281,17 +281,16 @@ local Button = TestTab:CreateButton({
 	end,
 })
 
-ArrayField:Notify({
-	Title = "Plasma Hub Executed successfully",
-	Content = "Remember to always use an alt while exploiting, stay safe!",
-	Duration = 6.5,
-	Image = 4483362458,
-	Actions = { -- Notification Buttons
-		Ignore = {
-			Name = "Cool",
-			Callback = function()
-				print("The user tapped Okay!")
-			end
-		},
-	},
+Window:Prompt({
+    Title = 'Remember:',
+    SubTitle = 'Always remember to use an alt account while exploiting!',
+    Content = 'There is always a chance that Roblox will update and send out another ban wave',
+    Actions = {
+        Accept = {
+            Name = 'Accept',
+            Callback = function()
+                print('Pressed')
+            end,
+        }
+    }
 })
