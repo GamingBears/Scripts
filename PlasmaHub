@@ -49,7 +49,7 @@ local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
 local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
 
-local lclSection = lclTab:CreateSection("Universal",false)
+local lclSection = lclTab:CreateSection("Universal","")
 
 local Input = lclTab:CreateInput({
 	Name = "Walkspeed (16)",
@@ -108,7 +108,7 @@ local Button = lclTab:CreateButton({
 -- UNIVERSAL TAB
 
 local UniTab = Window:CreateTab("Universal", 4483362458) -- Title, Image
-local UniSection = UniTab:CreateSection("Universal Scripts",false)
+local UniSection = UniTab:CreateSection("Universal Scripts","")
 
 local Button = UniTab:CreateButton({
 	Name = "DomainX (Custom Version soon)",
@@ -168,7 +168,7 @@ local Button = UniTab:CreateButton({
 
 -- Script Hub
 local ScriptTab = Window:CreateTab("Script Hub", 4483362458) -- Title, Image
-local ScriptSection = ScriptTab:CreateSection("Games",false)
+local ScriptSection = ScriptTab:CreateSection("Games","")
 
 
 local Button = ScriptTab:CreateButton({
@@ -237,7 +237,7 @@ local Button = ScriptTab:CreateButton({
 -- EXPERIMENTAL TAB
 
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
-local TestSection = TestTab:CreateSection("Features",false)
+local TestSection = TestTab:CreateSection("Features","")
 
 local Button = TestTab:CreateButton({
 	Name = "Print Test",
