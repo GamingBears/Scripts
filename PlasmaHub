@@ -22,34 +22,22 @@ local Window = ArrayField:CreateWindow({
 		FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
 		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
 		GrabKeyFromSite = true,
-		Key = {"|","PlasmaHub24","PV1" }
-}
+		Key = {"|","PlasmaHub24","PV1" } -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+	}
 })
 
 -- MAIN TAB
 
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
-local MainSection = MainTab:CreateSection("Main", Yes it works)
-    Tab:CreateSpacing(nil,10)
-    local Button = Tab:CreateButton({
-        Name = "Button Example",
-        Info = {
-            Title = 'This is a Button',
-            Description = 'This is a description for the button you know.',
-        },
-        Interact = 'Changable',
-        Callback = function()
-            print('Pressed')
-        end,
-    })
+local MainSection = MainTab:CreateSection("Main")
 
-local Label = MainTab:CreateLabel("Beta V1. Press L to destroy UI")
+local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
 
 local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
 local Keybind = MainTab:CreateKeybind({
    Name = "Destroy UI",
-   CurrentKeybind = "L",
+   CurrentKeybind = "RightBracket",
    HoldToInteract = false,
    Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
