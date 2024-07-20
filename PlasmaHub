@@ -31,10 +31,6 @@ local Window = ArrayField:CreateWindow({
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Main", false)
 
-local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
-
-local Label = MainTab:CreateLabel("Alot more features and game soon!")
-
 local Keybind = MainTab:CreateKeybind({
    Name = "Destroy UI",
    CurrentKeybind = "RightBracket",
@@ -42,9 +38,12 @@ local Keybind = MainTab:CreateKeybind({
    Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
    ArrayField:Destroy()
-   -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
    end,
 })
+
+local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
+
+local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
 -- LOCAL PLAYER
 
@@ -240,51 +239,6 @@ local Button = ScriptTab:CreateButton({
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
 local TestSection = TestTab:CreateSection("Features")
 
-local Dropdown = TestTab:CreateDropdown({
-	Name = "Dropdown Test",
-	Options = {"Option 1","Option 2"},
-	CurrentOption = {"Option 1"},
-	MultipleOptions = false,
-	Flag = "Dropdowntest", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Option)
-		-- The function that takes place when the selected option is changed
-		-- The variable (Option) is a table of strings for the current selected options
-	end,
-})
-
-    local Toggle = TestTab:CreateToggle({
-        Name = "Toggle Example",
-        Info = {
-            Title = 'Slider template',
-            Image = '12735851647',
-            Description = 'Just a slider for stuff',
-        },
-        CurrentValue = false,
-        Flag = "Toggle1", 
-        Callback = function(Value)
-            print(Value)
-        end,
-    })
-
-    local Slider = TestTab:CreateSlider({
-        Name = "Slider Example",
-        Range = {0, 100},
-        Increment = 10,
-        Suffix = "Bananas",
-        CurrentValue = 10,
-        Flag = "Slider1",
-        Callback = function(Value)
-            print(Value)
-        end,
-    })
-
-local Button = TestTab:CreateButton({
-	Name = "Infinite Yield",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
-	end,
-})
-
 local Button = TestTab:CreateButton({
 	Name = "Print Test",
 	Callback = function()
@@ -312,39 +266,11 @@ local Button = TestTab:CreateButton({
 	end,
 })
 
-local ColorPicker = TestTab:CreateColorPicker({
-	Name = "Color Picker",
-	Color = Color3.fromRGB(255,255,255),
-	Flag = "ColorPickerTest", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Value)
-		-- The function that takes place every time the color picker is moved/changed
-		-- The variable (Value) is a Color3fromRGB value based on which color is selected
-	end
-})
-
-local Input = TestTab:CreateInput({
-	Name = "Input Test",
-	PlaceholderText = "Input Placeholder",
-	RemoveTextAfterFocusLost = false,
-	Callback = function(Text)
-		print("Changed")-- The function that takes place when the input is changed
-		print("Something")-- The variable (Text) is a string for the value in the text box
-	end,
-})
-
-
 local Button = TestTab:CreateButton({
 	Name = "Universal Hub",
 	Callback = function()
 --		premium_key = "none";
 		loadstring(game:HttpGet('https://zade.insane.rip/p/raw/5wf8db13y2'))()
-	end,
-})
-
-local Button = TestTab:CreateButton({
-	Name = "Universal Hub2",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader'))()
 	end,
 })
 
