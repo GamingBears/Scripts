@@ -240,7 +240,7 @@ local Button = ScriptTab:CreateButton({
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
 local TestSection = TestTab:CreateSection("Features")
 
-    local Toggle = Tab:CreateToggle({
+    local Toggle = TestTab:CreateToggle({
         Name = "Toggle Example",
         Info = {
             Title = 'Slider template',
@@ -266,7 +266,7 @@ local Dropdown = TestTab:CreateDropdown({
 	end,
 })
 
-    local Slider = Tab:CreateSlider({
+    local Slider = TestTab:CreateSlider({
         Name = "Slider Example",
         Range = {0, 100},
         Increment = 10,
