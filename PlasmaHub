@@ -247,6 +247,25 @@ local Button = TestTab:CreateButton({
 })
 
 local Button = TestTab:CreateButton({
+	Name = "Window Prompt",
+	Callback = function()
+Window:Prompt({
+    Title = 'Title Man:',
+    SubTitle = 'Subtitle',
+    Content = 'Very good GUI but for whatever reason the accept button is goofy',
+    Actions = {
+        Accept = {
+            Name = 'Accept',
+            Callback = function()
+                print('Pressed')
+            end,
+        }
+    }
+})
+	end,
+})
+
+local Button = TestTab:CreateButton({
 	Name = "Notify",
 	Callback = function()
 		ArrayField:Notify({
