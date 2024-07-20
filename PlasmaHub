@@ -50,7 +50,7 @@ local Keybind = MainTab:CreateKeybind({
 
 local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
 
-local lclSection = lclTab:CreateSection("Universal")
+local lclSection = lclTab:CreateSection("Universal", Yes)
 
 local Input = lclTab:CreateInput({
 	Name = "Walkspeed (16)",
@@ -78,7 +78,7 @@ local Button = lclTab:CreateButton({
 })
 
 local Button = lclTab:CreateButton({
-	Name = "Click TP",
+	Name = "Click TP (Ctrl+Click)",
 	Callback = function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/vdLumqAq'))()
 	end,
