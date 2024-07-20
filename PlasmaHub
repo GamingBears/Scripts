@@ -29,7 +29,7 @@ local Window = ArrayField:CreateWindow({
 -- MAIN TAB
 
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
-local MainSection = MainTab:CreateSection("Main")
+local MainSection = MainTab:CreateSection("Main", "Yes")
 
 local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
 
@@ -50,7 +50,7 @@ local Keybind = MainTab:CreateKeybind({
 
 local lclTab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
 
-local lclSection = lclTab:CreateSection("Universal", Yes)
+local lclSection = lclTab:CreateSection("Universal")
 
 local Input = lclTab:CreateInput({
 	Name = "Walkspeed (16)",
