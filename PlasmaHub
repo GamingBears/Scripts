@@ -240,20 +240,6 @@ local Button = ScriptTab:CreateButton({
 local TestTab = Window:CreateTab("Test Tab", 4483362458) -- Title, Image
 local TestSection = TestTab:CreateSection("Features")
 
-    local Toggle = TestTab:CreateToggle({
-        Name = "Toggle Example",
-        Info = {
-            Title = 'Slider template',
-            Image = '12735851647',
-            Description = 'Just a slider for stuff',
-        },
-        CurrentValue = false,
-        Flag = "Toggle1", 
-        Callback = function(Value)
-            print(Value)
-        end,
-    })
-
 local Dropdown = TestTab:CreateDropdown({
 	Name = "Dropdown Test",
 	Options = {"Option 1","Option 2"},
