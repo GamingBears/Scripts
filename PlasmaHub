@@ -29,8 +29,7 @@ local Window = ArrayField:CreateWindow({
 -- MAIN TAB
 
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
-local MainSection = MainTab:CreateSection("Main",nil)
-local MainSection = MainTab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local MainSection = MainTab:CreateSection("Main","")
 
 local Keybind = MainTab:CreateKeybind({
    Name = "Destroy UI",
