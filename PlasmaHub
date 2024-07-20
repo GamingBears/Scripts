@@ -23,14 +23,6 @@ local Window = ArrayField:CreateWindow({
 		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
 		GrabKeyFromSite = true,
 		Key = {"|","PlasmaHub24","PV1" }
-        	Actions = {
-              	  [1] = {
-                  	  Text = 'Click here to copy the key link',
-                 	   OnPress = function()
-
-                   	 end,
-		}
-	},
 }
 })
 
