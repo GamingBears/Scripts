@@ -29,7 +29,7 @@ local Window = ArrayField:CreateWindow({
 -- MAIN TAB
 
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
-local MainSection = MainTab:CreateSection("Main", "Yes")
+local MainSection = MainTab:CreateSection("Main", false)
 
 local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
 
