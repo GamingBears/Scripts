@@ -252,6 +252,20 @@ local Dropdown = TestTab:CreateDropdown({
 	end,
 })
 
+    local Toggle = TestTab:CreateToggle({
+        Name = "Toggle Example",
+        Info = {
+            Title = 'Slider template',
+            Image = '12735851647',
+            Description = 'Just a slider for stuff',
+        },
+        CurrentValue = false,
+        Flag = "Toggle1", 
+        Callback = function(Value)
+            print(Value)
+        end,
+    })
+
     local Slider = TestTab:CreateSlider({
         Name = "Slider Example",
         Range = {0, 100},
