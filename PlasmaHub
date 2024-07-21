@@ -210,7 +210,7 @@ local Button = ScriptTab:CreateButton({
 local Button = ScriptTab:CreateButton({
 	Name = "Skywars [CLASSIC]",
 	Callback = function()
-		loadstring(game:HttpGet("loadstring(game:HttpGet("https://paste.ee/r/r9gnA", true))()", true))()
+		loadstring(game:HttpGet("https://paste.ee/r/r9gnA"))()
 	end,
 })
 
