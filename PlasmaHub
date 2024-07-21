@@ -70,16 +70,16 @@ local Input = lclTab:CreateInput({
 })
 
 local Button = lclTab:CreateButton({
-	Name = "Rejoin",
+	Name = "Click TP (Ctrl+Click)",
 	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+		loadstring(game:HttpGet('https://pastebin.com/raw/vdLumqAq'))()
 	end,
 })
 
 local Button = lclTab:CreateButton({
-	Name = "Click TP (Ctrl+Click)",
+	Name = "Rejoin",
 	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/vdLumqAq'))()
+		loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
 	end,
 })
 
@@ -118,18 +118,18 @@ local Button = UniTab:CreateButton({
 })
 
 local Button = UniTab:CreateButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
+	end,
+})
+
+local Button = UniTab:CreateButton({
 	Name = "Orca Hub",
 	Callback = function()
 		loadstring(
   game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua")
 )()
-	end,
-})
-
-local Button = UniTab:CreateButton({
-	Name = "Infinite Yield",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
 	end,
 })
 
