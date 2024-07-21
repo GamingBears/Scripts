@@ -179,7 +179,7 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "Hellmet ESP (Moving to Script Hub)",
+	Name = "Hellmet ESP",
 	Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
 	end,
@@ -204,6 +204,13 @@ local Button = ScriptTab:CreateButton({
 	Name = "Bedwars",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Skywars [CLASSIC]",
+	Callback = function()
+		loadstring(game:HttpGet("loadstring(game:HttpGet("https://paste.ee/r/r9gnA", true))()", true))()
 	end,
 })
 
