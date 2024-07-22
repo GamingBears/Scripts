@@ -38,6 +38,18 @@ do
 
 -- LOCAL PLAYER
 
+
+
+-- UNIVERSAL
+
+
+
+-- SCRIPT HUB
+
+
+
+-- TEST TAB
+
     Tabs.Test:AddButton({
         Title = "Button",
         Description = "Very important button",
@@ -222,6 +234,7 @@ do
     end)
 end
 
+-- SETTINGS
 
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
@@ -251,9 +264,9 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Fluent:Notify({
-    Title = "Fluent",
+    Title = "Plasma Hub",
     Content = "The script has been loaded.",
-    Duration = 8
+    Duration = 5
 })
 
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
