@@ -15,10 +15,10 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
-    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "" })
-    UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "" })
+    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "" }),
+    UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "" })
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
     Test = Window:AddTab({ Title = "Test Tab", Icon = "" })
 }
 
