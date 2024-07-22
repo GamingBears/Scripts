@@ -37,7 +37,6 @@ do
 -- LOCAL PLAYER
 
 
-
 -- UNIVERSAL
 
 
@@ -79,7 +78,8 @@ Tabs.Test:AddSection("Section Test")
     Title = "Button",
     Description = "Very important button",
     Callback = function()
-        print("Hello, world!")
+        print("Yes")
+end
     end
 })
 
