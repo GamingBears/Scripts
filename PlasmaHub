@@ -43,6 +43,8 @@ local Keybind = MainTab:CreateKeybind({
 
 local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
 
+local Label = MainTab:CreateLabel("Press the square top left corner to change tabs")
+
 local Label = MainTab:CreateLabel("Alot more features and game soon!")
 
 -- LOCAL PLAYER
