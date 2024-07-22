@@ -28,8 +28,6 @@ do
 
 -- MAIN
 
-    Tabs.Main:AddSection("Section Name")
-
     Tabs.Main:AddParagraph({
         Title = "Paragraph",
         Content = "This is a paragraph.\nSecond line! \nThird line!"
@@ -49,6 +47,8 @@ do
 
 
 -- TEST TAB
+
+Tabs.Test:AddSection("Section Test")
 
     Tabs.Test:AddButton({
         Title = "Button",
