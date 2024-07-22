@@ -32,7 +32,7 @@ do
 
     Tabs.Main:AddParagraph({
         Title = "Paragraph",
-        Content = "This is a paragraph.\nSecond line!"
+        Content = "This is a paragraph.\nSecond line! \nThird line!"
     })
 
 
