@@ -134,7 +134,7 @@ do
 
 
 
-    local Colorpicker = Tabs.LocalPlayer:AddColorpicker("Colorpicker", {
+    local Colorpicker = Tabs.Test:AddColorpicker("Colorpicker", {
         Title = "Colorpicker",
         Default = Color3.fromRGB(96, 205, 255)
     })
@@ -147,7 +147,7 @@ do
 
 
 
-    local TColorpicker = Tabs.Main:AddColorpicker("TransparencyColorpicker", {
+    local TColorpicker = Tabs.Test:AddColorpicker("TransparencyColorpicker", {
         Title = "Colorpicker",
         Description = "but you can change the transparency.",
         Transparency = 0,
