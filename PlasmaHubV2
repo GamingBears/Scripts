@@ -9,13 +9,17 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.RightControl -- Used when theres no MinimizeKeybind
 })
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "" })
+    UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "" })
+    ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "" })
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Test = Window:AddTab({ Title = "Test Tab", Icon = "" })
 }
 
 local Options = Fluent.Options
@@ -27,8 +31,6 @@ do
         SubContent = "SubContent", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
     })
-
-
 
     Tabs.Main:AddParagraph({
         Title = "Paragraph",
