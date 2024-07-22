@@ -75,7 +75,7 @@ do
         end
     })
 
-    Tab:AddButton({
+    Tabs.Test:AddButton({
     Title = "Button",
     Description = "Very important button",
     Callback = function()
