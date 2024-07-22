@@ -75,7 +75,13 @@ do
         end
     })
 
-
+    Tab:AddButton({
+    Title = "Button",
+    Description = "Very important button",
+    Callback = function()
+        print("Hello, world!")
+    end
+})
 
     local Toggle = Tabs.Test:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
@@ -235,6 +241,14 @@ do
 end
 
 -- SETTINGS
+
+    Tabs.Settings:AddButton({
+    Title = "Print Test",
+    Description = "Prints text in the output",
+    Callback = function()
+        print("Execution working!")
+    end
+})
 
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
