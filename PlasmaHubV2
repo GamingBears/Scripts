@@ -17,7 +17,7 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "info" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
-    ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "file-code-2" }),
+    ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
     Test = Window:AddTab({ Title = "Test Tab", Icon = "wrench" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
@@ -25,6 +25,8 @@ local Tabs = {
 local Options = Fluent.Options
 
 do
+
+-- MAIN
 
     Tabs.Main:AddSection("Section Name")
 
@@ -34,8 +36,9 @@ do
     })
 
 
+-- LOCAL PLAYER
 
-    Tabs.Main:AddButton({
+    Tabs.Test:AddButton({
         Title = "Button",
         Description = "Very important button",
         Callback = function()
@@ -62,7 +65,7 @@ do
 
 
 
-    local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
+    local Toggle = Tabs.Test:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
     Toggle:OnChanged(function()
         print("Toggle changed:", Options.MyToggle.Value)
@@ -72,7 +75,7 @@ do
 
 
     
-    local Slider = Tabs.Main:AddSlider("Slider", {
+    local Slider = Tabs.Test:AddSlider("Slider", {
         Title = "Slider",
         Description = "This is a slider",
         Default = 2,
@@ -92,7 +95,7 @@ do
 
 
 
-    local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
+    local Dropdown = Tabs.Test:AddDropdown("Dropdown", {
         Title = "Dropdown",
         Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
         Multi = false,
@@ -107,7 +110,7 @@ do
 
 
     
-    local MultiDropdown = Tabs.Main:AddDropdown("MultiDropdown", {
+    local MultiDropdown = Tabs.Test:AddDropdown("MultiDropdown", {
         Title = "Dropdown",
         Description = "You can select multiple values.",
         Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
@@ -131,7 +134,7 @@ do
 
 
 
-    local Colorpicker = Tabs.Main:AddColorpicker("Colorpicker", {
+    local Colorpicker = Tabs.LocalPlayer:AddColorpicker("Colorpicker", {
         Title = "Colorpicker",
         Default = Color3.fromRGB(96, 205, 255)
     })
@@ -160,7 +163,7 @@ do
 
 
 
-    local Keybind = Tabs.Main:AddKeybind("Keybind", {
+    local Keybind = Tabs.Test:AddKeybind("Keybind", {
         Title = "KeyBind",
         Mode = "Toggle", -- Always, Toggle, Hold
         Default = "LeftControl", -- String as the name of the keybind (MB1, MB2 for mouse buttons)
@@ -203,7 +206,7 @@ do
     Keybind:SetValue("MB2", "Toggle") -- Sets keybind to MB2, mode to Hold
 
 
-    local Input = Tabs.Main:AddInput("Input", {
+    local Input = Tabs.Test:AddInput("Input", {
         Title = "Input",
         Default = "Default",
         Placeholder = "Placeholder",
