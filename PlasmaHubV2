@@ -3,7 +3,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Plasma Hub V2 " .. Fluent.Version,
+    Title = "Plasma Hub V2 | Fluent UI " .. Fluent.Version,
     SubTitle = "by bear",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -14,8 +14,8 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "house" }),
-    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-round-pen" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "info" }),
+    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "file-code-2" }),
     Test = Window:AddTab({ Title = "Test Tab", Icon = "wrench" }),
@@ -25,6 +25,8 @@ local Tabs = {
 local Options = Fluent.Options
 
 do
+
+    Tabs.Main:AddSection("Section Name")
 
     Tabs.Main:AddParagraph({
         Title = "Paragraph",
