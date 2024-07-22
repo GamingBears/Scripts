@@ -203,9 +203,16 @@ local Button = ScriptTab:CreateButton({
 })
 
 local Button = ScriptTab:CreateButton({
-	Name = "Bedwars",
+	Name = "Bedwars VapeV4 [Not 100% Supported]",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end,
+})
+
+local Button = ScriptTab:CreateButton({
+	Name = "Bedwars Ghostware",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CakScripts/AetherClientBW/main/MainScript", true))()
 	end,
 })
 
@@ -292,6 +299,18 @@ local Button = TestTab:CreateButton({
 			},
 		})
 	end,
+})
+
+local Dropdown = Tab:CreateDropdown({
+   Name = "Dropdown Example",
+   Options = {"Option 1","Option 2"},
+   CurrentOption = "Option 1"
+   MultiSelection = false, -- If MultiSelections is allowed
+   Flag = "Dropdown12", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Option)
+   print("Changed")-- The function that takes place when the selected option is changed
+   print("else")-- The variable (Option) is a string for the value that the dropdown was changed to
+   end,
 })
 
 local Button = TestTab:CreateButton({
