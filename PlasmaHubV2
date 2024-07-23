@@ -35,8 +35,8 @@ do
 
 local Slider = Tabs.Main:AddSlider("Slider", 
 {
-    Title = "Slider",
-    Description = "This is a slider",
+    Title = "Speed",
+    Description = "Edit your users speed",
     Default = 16,
     Min = 1,
     Max = 500,
