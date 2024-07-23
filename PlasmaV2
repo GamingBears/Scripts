@@ -136,14 +136,6 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.LocalPlayer:AddButton({
-    Title = "Gravity Switch",
-    Description = "Allows you to toggle workspace gravity, 0-192",
-    Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/syqWRnHC'))()
-    end
-})
-
-    Tabs.LocalPlayer:AddButton({
     Title = "Click TP",
     Description = "Press Ctrl+LMB to use once pressed",
     Callback = function()
