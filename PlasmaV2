@@ -206,7 +206,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "DomainX",
     Description = "An admin/universal command bar which has all your basic needs",
     Callback = function()
-        
+        loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))()--
     end
 })
 
@@ -214,7 +214,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Orca Hub",
     Description = "Similar to domain it has everything you need for exploiting",
     Callback = function()
-        game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua")
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua'))()
     end
 })
 
