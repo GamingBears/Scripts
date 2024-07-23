@@ -33,22 +33,44 @@ do
         Content = "Be sure to join our discord server for help/suggestions! "
     })
 
-local Slider = Tabs.Main:AddSlider("Slider", 
+
+-- LOCAL PLAYER
+
+    Tabs.Test:AddButton({
+    Title = "Default Settings",
+    Description = "Returns to the normal default walk and jump speeds (16, 50)",
+    Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        
+    end
+})
+
+local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
 {
     Title = "Speed",
     Description = "Edit your users speed",
     Default = 16,
     Min = 1,
     Max = 300,
-    Rounding = 2,
+    Rounding = 1,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
     end
 })
 
-
--- LOCAL PLAYER
-
+local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
+{
+    Title = "Jump Power",
+    Description = "Edit your users jump power",
+    Default = 16,
+    Min = 1,
+    Max = 300,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+    end
+})
 
 -- UNIVERSAL
 
