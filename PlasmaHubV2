@@ -86,7 +86,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 {
     Title = "Jump Power",
     Description = "Edit your users jump power",
-    Default = 16,
+    Default = 50,
     Min = 1,
     Max = 300,
     Rounding = 0.5,
@@ -97,9 +97,9 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Gravity",
-    Description = "Edits Client's game gravity. /n(0, no gravity, 196.2 is default.)",
+    Description = "Edits Client's game gravity.
     Default = "",
-    Placeholder = "Number Here",
+    Placeholder = "196.2 Default",
     Numeric = true, -- Only allows numbers
     Finished = true, -- Only calls callback when you press enter
     Callback = function(Value)
