@@ -36,7 +36,7 @@ do
 
 -- LOCAL PLAYER
 
-    Tabs.Test:AddButton({
+    Tabs.LocalPlayer:AddButton({
     Title = "Default Settings",
     Description = "Returns to the normal default walk and jump speeds (16, 50)",
     Callback = function()
