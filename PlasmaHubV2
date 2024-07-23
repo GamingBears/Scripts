@@ -210,6 +210,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
 
 -- SETTINGS
+end
 
     Tabs.Settings:AddButton({
     Title = "Print Test",
@@ -246,29 +247,7 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 Window:SelectTab(1)
 
-Fluent:Notify({
-    Title = "Plasma Hub",
-    Content = "The script has been loaded.",
-    Duration = 5
-})
 
-Window:Dialog({
-    Title = "Plasma Hub has loaded successfully",
-    Content = "NOTICE: Never exploit on mains. There is always a chance that Roblox will update and send out another ban wave",
-    Buttons = {
-        { 
-            Title = "Confirm",
-            Callback = function()
-
-            end 
-        }, {
-            Title = "Dismiss",
-            Callback = function()
-
-            end 
-        }
-    }
-})
 
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
 -- which has been marked to be one that auto loads!
