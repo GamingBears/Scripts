@@ -97,7 +97,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Gravity",
-    Description = "Edits Client's game gravity.
+    Description = "Edits Client's game gravity."
     Default = "",
     Placeholder = "196.2 Default",
     Numeric = true, -- Only allows numbers
