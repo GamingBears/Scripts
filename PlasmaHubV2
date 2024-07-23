@@ -105,7 +105,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Title = "Fullbright",
     Description = "Removes all shadows and brightens your game",
     Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/tePZ6ke3'))()
     end
 })
 
@@ -113,7 +113,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Title = "Btools",
     Description = "Gives you client sided Building tools from old Roblox",
     Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/syqWRnHC'))()
     end
 })
 
