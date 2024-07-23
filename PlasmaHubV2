@@ -92,7 +92,6 @@ Tabs.Test:AddSection("Section Test")
     Description = "Very important button",
     Callback = function()
         print("Yes")
-end
     end
 })
 
