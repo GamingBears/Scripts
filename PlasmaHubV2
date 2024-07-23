@@ -58,7 +58,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Default = 16,
     Min = 1,
     Max = 300,
-    Rounding = 1,
+    Rounding = 0.5,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
     end
@@ -71,7 +71,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Default = 16,
     Min = 1,
     Max = 300,
-    Rounding = 1,
+    Rounding = 0.5,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
     end
@@ -84,7 +84,19 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Default = 0,
     Min = 0,
     Max = 24,
-    Rounding = 0.5,
+    Rounding = 2,
+    Callback = function(Value)
+        game.Lighting.ClockTime = (Value)
+    end
+})
+
+local Input = Tabs.LocalPlayer:AddInput("Input", {
+    Title = "Clock Time",
+    Description = "Edits Client's clock time. (0-24)",
+    Default = "",
+    Placeholder = "Placeholder",
+    Numeric = true, -- Only allows numbers
+    Finished = true, -- Only calls callback when you press enter
     Callback = function(Value)
         game.Lighting.ClockTime = (Value)
     end
