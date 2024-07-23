@@ -3,18 +3,22 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
+    Title = "Plasma Hub | Fluent UI " .. Fluent.Version,
+    SubTitle = "by bear",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.RightControl -- Used when theres no MinimizeKeybind
 })
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "info" }),
+    LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
+    UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
+    ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
+    Test = Window:AddTab({ Title = "Test Tab", Icon = "wrench" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
