@@ -76,7 +76,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Default = 16,
     Min = 1,
     Max = 300,
-    Rounding = 0.5,
+    Rounding = 0.75,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
     end
@@ -89,10 +89,15 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Default = 50,
     Min = 1,
     Max = 300,
-    Rounding = 0.5,
+    Rounding = 0.75,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
     end
+})
+
+local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Scripts")
+Section:AddParagraph({
+        Title = "These are other modifications that can be made to the clients perspective "
 })
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
