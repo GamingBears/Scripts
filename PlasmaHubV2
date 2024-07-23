@@ -81,7 +81,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Title = "Infinite Jump",
     Description = "Press V to toggle",
     Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/vp25QVYP'))()
     end
 })
 
@@ -97,7 +97,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     Title = "Click TP",
     Description = "Press Ctrl+LMB to use once pressed",
     Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/vdLumqAq'))()
     end
 })
 
