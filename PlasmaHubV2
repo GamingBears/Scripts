@@ -253,7 +253,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
 
 -- SETTINGS
-end
+
 
     Tabs.Settings:AddButton({
     Title = "Print Test",
@@ -289,24 +289,6 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 
 Window:SelectTab(1)
-
-Window:Dialog({
-    Title = "Plasma has successfully loaded",
-    Content = "Always remember to use on alt. Roblox may do another banwave.",
-    Buttons = {
-        { 
-            Title = "Confirm",
-            Callback = function()
-                
-            end 
-        }, {
-            Title = "Dismiss",
-            Callback = function()
-                
-            end 
-        }
-    }
-})
 
 
 
