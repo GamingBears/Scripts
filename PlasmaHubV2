@@ -196,7 +196,53 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
 -- UNIVERSAL
 
+    Tabs.UniScripts:AddButton({
+    Title = "Infinite Yield",
+    Description = "A universal admin script that works on every game",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
 
+    Tabs.UniScripts:AddButton({
+    Title = "DomainX",
+    Description = "An admin/universal command bar which has all your basic needs",
+    Callback = function()
+        
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "Orca Hub",
+    Description = "Similar to domain it has everything you need for exploiting",
+    Callback = function()
+        game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua")
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "Ingame executor",
+    Description = "An in-game executor that looks like a command prompt",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GamingBears/Scripts/main/InGameExecutor'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "All emotes",
+    Description = "With this script, you have access to every single R15 emote for free, which others can see!",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/9dLpXWt1'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "Unnamed ESP",
+    Description = "An awesome universal esp script, tracers, boxes, health and more!",
+    Callback = function()
+        pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
+    end
+})
 
 -- SCRIPT HUB
 
