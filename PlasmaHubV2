@@ -41,8 +41,8 @@ do
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
-    Title = "Destroy UI (Press ] )",
-    Description = "Just in case you ever drag it off screen and can't reach it again",
+    Title = "Destroy UI Press ]",
+    Description = "Just in case you ever drag it off screen.",
     Mode = "Toggle", -- Always, Toggle, Hold
     Default = "RightBracket", -- String as the name of the keybind (MB1, MB2 for mouse buttons)
 
