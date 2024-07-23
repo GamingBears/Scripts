@@ -33,6 +33,11 @@ do
         Content = "Be sure to join our discord server for help/suggestions! "
     })
 
+    Tabs.Main:AddParagraph({
+        Title = "Update log: Plasma V2 Release!",
+        Content = "Yes"
+    })
+
 
 -- LOCAL PLAYER
 
@@ -73,12 +78,45 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 })
 
     Tabs.LocalPlayer:AddButton({
+    Title = "Infinite Jump",
+    Description = "Press V to toggle",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
     Title = "Rejoin",
     Description = "Leaves and rejoins the current game you are in",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
     end
 })
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Click TP",
+    Description = "Press Ctrl+LMB to use once pressed",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Fullbright",
+    Description = "Removes all shadows and brightens your game",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Btools",
+    Description = "Gives you client sided Building tools from old Roblox",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
 
 -- UNIVERSAL
 
