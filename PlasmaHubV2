@@ -1,3 +1,5 @@
+-- Also you can press ] to destroy/Delete the script ingame 
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -38,6 +40,22 @@ do
         Content = "Yes"
     })
 
+    local Keybind = Tabs.Main:AddKeybind("Keybind", {
+    Title = "Destroy UI (Press ] )",
+    Description = "Just in case you ever drag it off screen and can't reach it again",
+    Mode = "Toggle", -- Always, Toggle, Hold
+    Default = "RightBracket", -- String as the name of the keybind (MB1, MB2 for mouse buttons)
+
+    -- Occurs when the keybind is clicked, Value is `true`/`false`
+    Callback = function(Value)
+        Fluent:Destroy()
+    end,
+
+    -- Occurs when the keybind itself is changed, `New` is a KeyCode Enum OR a UserInputType Enum
+    ChangedCallback = function(New)
+        print("Keybind changed!", New)
+    end
+})
 
 -- LOCAL PLAYER
 
@@ -77,16 +95,15 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     end
 })
 
-local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
-{
-    Title = "Clock Time",
-    Description = "Edits the client's clock time",
-    Default = 0,
-    Min = 0,
-    Max = 24,
-    Rounding = 2,
+local Input = Tabs.LocalPlayer:AddInput("Input", {
+    Title = "Gravity",
+    Description = "Edits Client's game gravity. (0, no gravity, 196.2 is default.)",
+    Default = "",
+    Placeholder = "Number Here",
+    Numeric = true, -- Only allows numbers
+    Finished = true, -- Only calls callback when you press enter
     Callback = function(Value)
-        game.Lighting.ClockTime = (Value)
+        workspace.Gravity = (Value)
     end
 })
 
@@ -94,7 +111,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Clock Time",
     Description = "Edits Client's clock time. (0-24)",
     Default = "",
-    Placeholder = "Placeholder",
+    Placeholder = "12 = Daytime",
     Numeric = true, -- Only allows numbers
     Finished = true, -- Only calls callback when you press enter
     Callback = function(Value)
@@ -115,6 +132,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     Description = "Leaves and rejoins the current game you are in",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Gravity Switch",
+    Description = "Allows you to toggle workspace gravity, 0-192",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/syqWRnHC'))()
     end
 })
 
