@@ -29,8 +29,8 @@ do
 -- MAIN
 
     Tabs.Main:AddParagraph({
-        Title = "Be sure to join our discord server for help/suggestions!",
-        Content = "\nSecond line! \nThird line!"
+        Title = "dsc.gg/plasmahub",
+        Content = "Be sure to join our discord server for help/suggestions! "
     })
 
 local Slider = Tabs.Main:AddSlider("Slider", 
