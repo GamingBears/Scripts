@@ -29,9 +29,22 @@ do
 -- MAIN
 
     Tabs.Main:AddParagraph({
-        Title = "Paragraph",
-        Content = "This is a paragraph.\nSecond line! \nThird line!"
+        Title = "Be sure to join our discord server for help/suggestions!",
+        Content = "\nSecond line! \nThird line!"
     })
+
+local Slider = Tabs.Main:AddSlider("Slider", 
+{
+    Title = "Slider",
+    Description = "This is a slider",
+    Default = 16,
+    Min = 1,
+    Max = 500,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+    end
+})
 
 
 -- LOCAL PLAYER
