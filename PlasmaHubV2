@@ -39,8 +39,8 @@ local Slider = Tabs.Main:AddSlider("Slider",
     Description = "Edit your users speed",
     Default = 16,
     Min = 1,
-    Max = 500,
-    Rounding = 1,
+    Max = 300,
+    Rounding = 2,
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
     end
