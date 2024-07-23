@@ -37,7 +37,7 @@ do
 
     Tabs.Main:AddParagraph({
         Title = "Update log: Plasma V2 Release!",
-        Content = "Very epic, log available in discord! /nYou should totally join if you haven't already"
+        Content = "Very epic, log available in discord! You should totally join if you haven't already"
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
@@ -96,9 +96,6 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 })
 
 local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Scripts")
-Section:AddParagraph({
-        Title = "These are other modifications that can be made to the clients perspective "
-})
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Gravity",
@@ -246,6 +243,24 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 
 Window:SelectTab(1)
+
+Window:Dialog({
+    Title = "Title",
+    Content = "This is a dialog",
+    Buttons = {
+        { 
+            Title = "Confirm",
+            Callback = function()
+                print("Confirmed the dialog.")
+            end 
+        }, {
+            Title = "Cancel",
+            Callback = function()
+                print("Cancelled the dialog.")
+            end 
+        }
+    }
+})
 
 
 
