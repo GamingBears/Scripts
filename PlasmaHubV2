@@ -245,18 +245,18 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Window:Dialog({
-    Title = "Title",
-    Content = "This is a dialog",
+    Title = "Plasma has successfully loaded",
+    Content = "Always remember to use on alt. Roblox may do another banwave.",
     Buttons = {
         { 
             Title = "Confirm",
             Callback = function()
-                print("Confirmed the dialog.")
+                
             end 
         }, {
-            Title = "Cancel",
+            Title = "Dismiss",
             Callback = function()
-                print("Cancelled the dialog.")
+                
             end 
         }
     }
