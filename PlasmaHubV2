@@ -167,6 +167,30 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
+    Tabs.LocalPlayer:AddButton({
+    Title = "Unlock Workspace",
+    Description = "Gives you client sided Building tools from old Roblox",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/HeqXPvf4'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Anti AFK",
+    Description = "Removes the kick after 20 minutes",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/kjB4evnt'))()
+    end
+})
+
+    Tabs.LocalPlayer:AddButton({
+    Title = "Focus Anti AFK",
+    Description = "Game thinks you are still on the Roblox app while you can do other things",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/skQ1tvsL'))()
+    end
+})
+
 
 -- UNIVERSAL
 
