@@ -77,6 +77,19 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
     end
 })
 
+local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
+{
+    Title = "Clock Time",
+    Description = "Edits the client's clock time",
+    Default = 0,
+    Min = 0,
+    Max = 24,
+    Rounding = 0.5,
+    Callback = function(Value)
+        game.Lighting.ClockTime = (Value)
+    end
+})
+
     Tabs.LocalPlayer:AddButton({
     Title = "Infinite Jump",
     Description = "Press V to toggle",
