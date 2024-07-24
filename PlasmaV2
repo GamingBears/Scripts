@@ -55,6 +55,15 @@ do --START
     end
 })
 
+    Tabs.Main:AddButton({
+    Title = "UNC Test and print level",
+    Description = "Does a UNC test and prints executor level in output press (F9)",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua'))()
+	print("Executor level:") printidentity()
+    end
+})
+
 -- LOCAL PLAYER
 
     Tabs.LocalPlayer:AddButton({
