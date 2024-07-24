@@ -364,24 +364,18 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 Window:SelectTab(1)
 
-Fluent:Notify({
-    Title = "Plasma Hub",
-    Content = "The script has been loaded.",
-    Duration = 8
-})
-
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
 
 Window:Dialog({
     Title = "Plasma has loaded!",
-    Content = "This is a dialog",
+    Content = "Always remember to exploit on alt!",
     Buttons = {
         { 
-            Title = "Confirm",
+            Title = "Join our discord!",
             Callback = function()
-                print("Confirmed the dialog.")
+                print("You better have joined our discord ;)")
             end 
         }
     }
