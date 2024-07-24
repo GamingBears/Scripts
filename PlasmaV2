@@ -365,7 +365,7 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Fluent:Notify({
-    Title = "Fluent",
+    Title = "Plasma Hub",
     Content = "The script has been loaded.",
     Duration = 8
 })
@@ -373,3 +373,16 @@ Fluent:Notify({
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
+
+Window:Dialog({
+    Title = "Plasma has loaded!",
+    Content = "This is a dialog",
+    Buttons = {
+        { 
+            Title = "Confirm",
+            Callback = function()
+                print("Confirmed the dialog.")
+            end 
+        }
+    }
+})
