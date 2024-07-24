@@ -320,7 +320,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
     Tabs.ScriptHub:AddButton({
     Title = "Prison Life Admin",
-    Description = "Desc",
+    Description = "Similar to infinite yield but for prison life only",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
     end
