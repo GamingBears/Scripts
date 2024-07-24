@@ -41,11 +41,13 @@ local Keybind = MainTab:CreateKeybind({
    end,
 })
 
-local Label = MainTab:CreateLabel("Beta V1. Press ] to destroy UI")
+local Label = MainTab:CreateLabel("V1. Press ] to destroy UI")
 
 local Label = MainTab:CreateLabel("Press the square top left corner to change tabs")
 
-local Label = MainTab:CreateLabel("Alot more features and game soon!")
+local Label = MainTab:CreateLabel("Plasma V2 has released! This script is no longer maintained!")
+
+local Label = MainTab:CreateLabel("Join our server to access the new script!")
 
 -- LOCAL PLAYER
 
@@ -337,7 +339,7 @@ local Button = TestTab:CreateButton({
 Window:Prompt({
     Title = 'Remember:',
     SubTitle = 'Always remember to use an alt account while exploiting!',
-    Content = 'There is always a chance that Roblox will update and send out another ban wave',
+    Content = 'V2 has released! Join our discord server to access!',
     Actions = {
         Accept = {
             Name = 'Accept',
