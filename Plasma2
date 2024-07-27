@@ -31,7 +31,7 @@ local Window = Rayfield:CreateWindow({
  
 local MainTab = Window:CreateTab("Plasma V2", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Load Plasma Hub V2",
    Callback = function()
 
