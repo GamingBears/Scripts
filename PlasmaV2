@@ -131,7 +131,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Field Of View/FOV",
-    Description = "Edits Client's FOV. ()",
+    Description = "Edits Client's FOV.",
     Default = "",
     Placeholder = "Default 60",
     Numeric = true, -- Only allows numbers
