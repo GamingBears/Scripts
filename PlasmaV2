@@ -183,7 +183,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
     Tabs.LocalPlayer:AddButton({
     Title = "Unlock Workspace",
-    Description = "Gives you client sided Building tools from old Roblox",
+    Description = "Any locked parts that Btools doesn't work on, becomes unlocked",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/HeqXPvf4'))()
     end
