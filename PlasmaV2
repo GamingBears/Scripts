@@ -129,6 +129,18 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
+local Input = Tabs.LocalPlayer:AddInput("Input", {
+    Title = "Field Of View/FOV",
+    Description = "Edits Client's FOV. ()",
+    Default = "",
+    Placeholder = "Default 60",
+    Numeric = true, -- Only allows numbers
+    Finished = true, -- Only calls callback when you press enter
+    Callback = function(Value)
+        workspace.Camera.FieldOfView = (Value)
+    end
+})
+
     Tabs.LocalPlayer:AddButton({
     Title = "Infinite Jump",
     Description = "Press V to toggle",
