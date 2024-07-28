@@ -292,6 +292,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Da Hood",
+    Description = "TBO",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Bedwars VapeV4",
     Description = "Not 100% Supported on Solara",
     Callback = function()
