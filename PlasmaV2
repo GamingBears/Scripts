@@ -256,6 +256,18 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
+    Tabs.UniScripts:AddButton({
+    Title = "Universal Aimbot",
+    Description = "Can't turn off",
+    Callback = function()
+	local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+	Aimbot.Load()
+    end
+})
+
+local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
+Aimbot.Load()
+
 -- SCRIPT HUB
 
     Tabs.ScriptHub:AddButton({
