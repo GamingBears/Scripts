@@ -225,6 +225,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.UniScripts:AddButton({
+	Title = "Infinite Yield Rebord",
+    Description = "Fan-made infinite yield",
+    Callback = function()
+         loadstring(game:HttpGet("https://github.com/fuckusfm/infiniteyield-reborn/raw/master/source"))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Orca Hub",
     Description = "Similar to domain it has everything you need for exploiting",
     Callback = function()
