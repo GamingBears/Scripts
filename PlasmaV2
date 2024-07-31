@@ -233,6 +233,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.UniScripts:AddButton({
+    Title = "Simple Spy",
+    Description = "No solara support",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Ingame executor",
     Description = "An in-game executor that looks like a command prompt",
     Callback = function()
