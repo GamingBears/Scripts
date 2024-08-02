@@ -341,6 +341,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Rivals Script",
+    Description = "Has a key system",
+    Callback = function()
+        loadstring(game:HttpGet("loadstring(game:HttpGet("https://scriptblox.com/raw/RIVALS-FREEZE-RAY-Jonny-Cheese-Script-15588"))()", true))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Bedwars GhostWare",
     Description = "Solara supported",
     Callback = function()
