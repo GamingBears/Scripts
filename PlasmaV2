@@ -344,7 +344,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Rivals Script",
     Description = "Has a key system",
     Callback = function()
-        loadstring(game:HttpGet("loadstring(game:HttpGet("https://scriptblox.com/raw/RIVALS-FREEZE-RAY-Jonny-Cheese-Script-15588"))()", true))()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/RIVALS-FREEZE-RAY-Jonny-Cheese-Script-15588"))()", true))()
     end
 })
 
