@@ -30,12 +30,12 @@ do --START
 
     Tabs.Main:AddParagraph({
         Title = "dsc.gg/plasmahub",
-        Content = "Be sure to join our discord server for help/suggestions! "
+        Content = "Be sure to join our discord server to report broken scripts!! "
     })
 
     Tabs.Main:AddParagraph({
-        Title = "Update log: Plasma V2 Release!",
-        Content = "Update log available in discord! You should join if you haven't already"
+        Title = "Update log: Plasma V2 Update!",
+        Content = "Added some more game scripts, /n Currently untested from bloxscripts "
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
@@ -361,18 +361,26 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivals
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Jailbreak",
+    Description = "SensationV2 [Luarmor] Join discord (dsc.gg/sensation) for updates and support",
+    Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Skywars [CLASSIC]",
-    Description = "Desc",
+    Description = "Skywars script",
     Callback = function()
         loadstring(game:HttpGet("https://paste.ee/r/r9gnA"))()
     end
 })
 
     Tabs.ScriptHub:AddButton({
-    Title = "Blox Fruits",
-    Description = "Reaper Hub, Verified Bloxscripts",
+    Title = "Blade Ball Auto Parry",
+    Description = "Nexam Hub [Luarmor] verified",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6af56c1753ac6679dee3acbd1fd952e5.lua"))()
     end
 })
 
