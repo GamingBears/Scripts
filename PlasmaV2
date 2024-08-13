@@ -35,7 +35,7 @@ do --START
 
     Tabs.Main:AddParagraph({
         Title = "Update log: Plasma V2 Update!",
-        Content = "Added some more game scripts, /n Currently untested from bloxscripts "
+        Content = "Added some more game scripts, /nCurrently untested from bloxscripts "
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
@@ -60,7 +60,7 @@ do --START
     Description = "Does a UNC test and prints executor level in output press (F9)",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua'))()
-	wait(5)
+	wait(6)
 	print("Executor level:") printidentity()
     end
 })
@@ -421,15 +421,11 @@ end
 
     Tabs.ScriptHub:AddButton({
     Title = "Reaper Hub",
-    Description = "A large script which supports many games /n https://discord.gg/reaperhub",
+    Description = "A large script which supports many games /nhttps://discord.gg/reaperhub",
     Callback = function()
 	loadstring((http.request{Url="https://reaperscripts.com/loader?l=1"}).Body,"0zek8y2bld7.qowl6c7o~1")();
     end
 })
-
-
-
-
 
 -- SCRIPT INFO
 
