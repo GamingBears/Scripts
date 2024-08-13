@@ -369,6 +369,23 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivals
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Blox Fruits",
+    Description = "Reaper Hub, Verified Bloxscripts",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Blox Fruits",
+    Description = "Bean Hub, Verified bloxscripts",
+    Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/SoyEIPekka/BeanHub/main/bloxfruitsnewpc2023'),true))()
+    end
+})
+
+
+    Tabs.ScriptHub:AddButton({
     Title = "Break In 1",
     Description = "Press J for swat in lobby",
     Callback = function()
