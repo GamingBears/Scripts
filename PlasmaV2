@@ -282,10 +282,9 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 
     Tabs.UniScripts:AddButton({
     Title = "Universal Aimbot",
-    Description = "Can't turn off",
+    Description = "NEW ONE",
     Callback = function()
-	local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
-	Aimbot.Load()
+	loadstring(game:HttpGet('https://gist.githubusercontent.com/pleaseful/340594344eb73891941d2d01af742618/raw/94063ac38cbda5f382675ca949db75f6cc683fd8/Aimmerz%2520V2.lua'))()
     end
 })
 
@@ -427,19 +426,59 @@ end
     end
 })
 
--- SCRIPT INFO
-
-Tabs.ScrInfo:AddParagraph({
-    Title = "Reaper Hub Supported Scripts",
-    Content = "The Strongest Battlegrounds\nAnime Fighters Simulator\nHide and Seek Extreme\nArm Wrestle Simulator\nToilet Tower Defense\nJujutsu Shenanigans\nLegends of Speed\nDungeon Quest\n+1 Blade Slayer\nEat the World\nA Dusty Trip\nPull a Sword\nGym League\nSlap Battles\nType Soul"
+    Tabs.ScriptHub:AddButton({
+    Title = "Outlaster",
+    Description = "Cheat Menu",
+    Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/SlamminPig/6FootScripts/main/Scripts/Outlaster.lua'))();
+    end
 })
 
-    Tabs.ScrInfo:AddButton({
+    Tabs.ScriptHub:AddButton({
+    Title = "Aftermath",
+    Description = "Item ESP",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/meetthegrahams/main/lurking.lua")())
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Dandy's World",
+    Description = "OP Script",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Dandy's%20World"))("t.me/arceusxscripts")
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Pet Sim 99",
+    Description = "Zap Hub",
+    Callback = function()
+	loadstring(game:HttpGet('https://zaphub.xyz/ExecSolara'))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Trench War",
+    Description = "A trench war script",
+    Callback = function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/KfaKkDUf'))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "",
     Description = "",
     Callback = function()
 	
     end
+})
+
+-- SCRIPT INFO
+
+Tabs.ScrInfo:AddParagraph({
+    Title = "Reaper Hub Supported Scripts",
+    Content = "The Strongest Battlegrounds\nAnime Fighters Simulator\nHide and Seek Extreme\nArm Wrestle Simulator\nToilet Tower Defense\nJujutsu Shenanigans\nLegends of Speed\nDungeon Quest\n+1 Blade Slayer\nEat the World\nA Dusty Trip\nPull a Sword\nGym League\nSlap Battles\nType Soul"
 })
 
 
@@ -494,9 +533,10 @@ Window:Dialog({
     Content = "Always remember to exploit on alt!",
     Buttons = {
         { 
-            Title = "Join our discord!",
+            Title = "Copy Discord Invite!",
             Callback = function()
                 print("You better have joined our discord ;)")
+		setclipboard('https://discord.gg/abF85cPA')
             end 
         }
     }
