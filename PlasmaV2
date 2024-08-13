@@ -307,12 +307,24 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
+
+
     Tabs.ScriptHub:AddButton({
     Title = "Naval Warfare",
     Description = "2 scripts",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/CYWenD1T'))()
 		loadstring(game:HttpGet('https://pastebin.com/raw/vr5DGzEX'))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Rivals",
+    Description = "Rivals script, untested.",
+    Callback = function()
+        Key = ""
+SynZ = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivalsss.lua"))()
     end
 })
 
