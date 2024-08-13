@@ -14,11 +14,11 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "info" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "house" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
-    Test = Window:AddTab({ Title = "Test Tab", Icon = "wrench" }),
+    ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -419,7 +419,32 @@ end
 
 
 
--- TEST TAB
+    Tabs.ScriptHub:AddButton({
+    Title = "Reaper Hub",
+    Description = "A large script which supports many games /n https://discord.gg/reaperhub",
+    Callback = function()
+	loadstring((http.request{Url="https://reaperscripts.com/loader?l=1"}).Body,"0zek8y2bld7.qowl6c7o~1")();
+    end
+})
+
+
+
+
+
+-- SCRIPT INFO
+
+Tabs.ScrInfo:AddParagraph({
+    Title = "Reaper Hub Supported Scripts",
+    Content = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n!"
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "",
+    Description = "",
+    Callback = function()
+	
+    end
+})
 
 
 
