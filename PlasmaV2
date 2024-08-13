@@ -35,7 +35,7 @@ do --START
 
     Tabs.Main:AddParagraph({
         Title = "Update log: Plasma V2 Update!",
-        Content = "Added some more game scripts, /nCurrently untested from bloxscripts "
+        Content = "Added some more game scripts, Currently untested from bloxscripts "
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
@@ -421,7 +421,7 @@ end
 
     Tabs.ScriptHub:AddButton({
     Title = "Reaper Hub",
-    Description = "A large script which supports many games /nhttps://discord.gg/reaperhub",
+    Description = "A large script which supports many games || https://discord.gg/reaperhub",
     Callback = function()
 	loadstring((http.request{Url="https://reaperscripts.com/loader?l=1"}).Body,"0zek8y2bld7.qowl6c7o~1")();
     end
