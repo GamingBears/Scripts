@@ -14,7 +14,7 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "house" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "layout-panel-left" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
@@ -353,7 +353,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivals
 })
 
     Tabs.ScriptHub:AddButton({
-    Title = "Bedwars GhostWare",
+	    Title = "Bedwars Aether Client",
     Description = "Solara supported",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CakScripts/AetherClientBW/main/MainScript", true))()
@@ -435,10 +435,10 @@ end
 
 Tabs.ScrInfo:AddParagraph({
     Title = "Reaper Hub Supported Scripts",
-    Content = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n!"
+    Content = "The Strongest Battlegrounds\nAnime Fighters Simulator\nHide and Seek Extreme\nArm Wrestle Simulator\nToilet Tower Defense\nJujutsu Shenanigans\nLegends of Speed\nDungeon Quest\n+1 Blade Slayer\nEat the World\nA Dusty Trip\nPull a Sword\nGym League\nSlap Battles\nType Soul"
 })
 
-    Tabs.ScriptHub:AddButton({
+    Tabs.ScrInfo:AddButton({
     Title = "",
     Description = "",
     Callback = function()
