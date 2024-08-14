@@ -227,8 +227,6 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     end
 })
 
-
-
     Tabs.UniScripts:AddButton({
     Title = "Server finder",
     Description = "In game server browser",
@@ -242,6 +240,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     Description = "No solara support",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "Simple Chat Bypasser",
+    Description = "Bypasses roblox chat filter",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SkireScripts/Ouxie/main/Projects/simplebypassv3"))()
     end
 })
 
@@ -322,11 +328,23 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
+    Tabs.UniScripts:AddButton({
+    Title = "Equinox Hub",
+    Description = "A very large FE script hub",
+    Callback = function()
+         loadstring(game:HttpGet('https://pastebin.com/raw/wzB1Qh78'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
+    Title = "Venox Hub",
+    Description = "A very large FE script hub",
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/main.lua'))()
+    end
+})
+
 -- SCRIPT HUB
-
-local Section = Tabs.ScriptHub:AddSection("Hubs")
-
-
 
     Tabs.ScriptHub:AddButton({
     Title = "Decaying Winter",
@@ -343,8 +361,6 @@ local Section = Tabs.ScriptHub:AddSection("Hubs")
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
     end
 })
-
-
 
     Tabs.ScriptHub:AddButton({
     Title = "Naval Warfare",
@@ -438,6 +454,8 @@ end
         loadstring(game:HttpGet("https://paste.ee/r/r9gnA"))()
     end
 })
+
+
 
     Tabs.ScriptHub:AddButton({
     Title = "Blade Ball Auto Parry",
