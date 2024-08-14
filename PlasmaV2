@@ -355,6 +355,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Natural Disaster Survival",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubNaturalDisasterSurvival"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Hellmet ESP",
     Description = "This can also be used as a universal ESP. Can't be turned off",
     Callback = function()
