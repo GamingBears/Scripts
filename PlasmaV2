@@ -117,13 +117,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
-local Input = Tabs.LocalPlayer:AddInput("Input", {
+local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
+{
     Title = "Clock Time",
     Description = "Edits Client's clock time. (0-24)",
-    Default = "",
-    Placeholder = "12 = Daytime",
-    Numeric = true, -- Only allows numbers
-    Finished = true, -- Only calls callback when you press enter
+    Default = ,
+    Min = 0,
+    Max = 24,
+    Rounding = 0.75,
     Callback = function(Value)
         game.Lighting.ClockTime = (Value)
     end
