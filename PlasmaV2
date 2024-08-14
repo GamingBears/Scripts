@@ -250,6 +250,14 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
     Tabs.UniScripts:AddButton({
+    Title = "Server finder",
+    Description = "In game server browser",
+    Callback = function()
+       loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Simple Spy",
     Description = "No solara support",
     Callback = function()
@@ -290,6 +298,19 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
 })
 
 -- SCRIPT HUB
+
+
+    Tabs.ScriptHub:AddButton({
+    Title = "VG Hub",
+    Description = "Supports 140+ Games",
+    Callback = function()
+        getgenv().KeySystem = false 
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub
+https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+
+    end
+})
 
     Tabs.ScriptHub:AddButton({
     Title = "Decaying Winter",
@@ -333,6 +354,32 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivals
     Description = "Emblem Hub",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/xYwLY6hj"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Arsenal",
+    Description = "Thunder client",
+    Callback = function()
+        if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+local owner = 'andrewdarkyyofficial'
+local branch = 'main'
+
+loadstring(http.request({
+    Url = string.format('https://raw.githubusercontent.com/%s/thunderclient/%s/main.lua', owner, branch),
+    Method = 'GET'
+}).Body)()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "MM2",
+    Description = "Ather Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Athergaming/Roblox-Murder-Mystery-2-Script/main/AtherHub%20Murder%20Mystery%202%20Script.lua"))()
     end
 })
 
