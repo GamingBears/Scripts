@@ -208,6 +208,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     end
 })
 
+    Tabs.LocalPlayer:AddButton({
+    Title = "Enable Reset",
+    Description = "Enables the reset button if disabled. On a loop",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/LKMsu2yK'))()
+    end
+})
+
 
 -- UNIVERSAL
 
