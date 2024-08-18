@@ -107,6 +107,18 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 })
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
+    Title = "Clock Time",
+    Description = "Edits Client's clock time.",
+    Default = "",
+    Placeholder = "0-24",
+    Numeric = true, -- Only allows numbers
+    Finished = true, -- Only calls callback when you press enter
+    Callback = function(Value)
+        game.Lighting.ClockTime = (Value)
+    end
+})
+
+local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Gravity",
     Description = "Edits Client's game gravity.",
     Default = "",
@@ -118,18 +130,7 @@ local Input = Tabs.LocalPlayer:AddInput("Input", {
     end
 })
 
-local Slider = Tabs.LocalPlayer:AddSlider("Slider", 
-{
-    Title = "Clock Time",
-    Description = "Edits Client's clock time. (0-24)",
-    Default = 12,
-    Min = 0,
-    Max = 24,
-    Rounding = 0.75,
-    Callback = function(Value)
-        game.Lighting.ClockTime = (Value)
-    end
-})
+
 
 local Input = Tabs.LocalPlayer:AddInput("Input", {
     Title = "Field Of View/FOV",
