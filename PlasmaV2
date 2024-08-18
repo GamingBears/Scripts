@@ -270,6 +270,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
 })
 
     Tabs.UniScripts:AddButton({
+    Title = "Dex Explorer",
+    Description = "Decompiler may not work",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/infyiff/backup/main/dex.lua'))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Simple Spy",
     Description = "No solara support",
     Callback = function()
