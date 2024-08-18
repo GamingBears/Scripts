@@ -122,7 +122,7 @@ local Slider = Tabs.LocalPlayer:AddSlider("Slider",
 {
     Title = "Clock Time",
     Description = "Edits Client's clock time. (0-24)",
-    Default = nil,
+    Default = 12,
     Min = 0,
     Max = 24,
     Rounding = 0.75,
