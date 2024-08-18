@@ -636,7 +636,7 @@ Window:Dialog({
             Title = "Copy Discord Invite!",
             Callback = function()
                 print("You better have joined our discord ;)")
-		setclipboard('https://discord.gg/abF85cPA')
+		setclipboard("https://discord.gg/abF85cPA")
             end 
         }
     }
