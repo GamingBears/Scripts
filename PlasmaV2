@@ -28,43 +28,6 @@ do --START
 
 -- MAIN
 
-local Input = Tabs.Main:AddInput("Input", {
-    Title = "Search",
-    Description = "",
-    Default = "",
-    Placeholder = "",
-    Numeric = false, -- Only allows numbers
-    Finished = true, -- Only calls callback when you press enter
-    Callback = function(Value)
--- Ensure that lclTab and its method to retrieve elements are valid
-        if not lclTab then
-            print("Error: lclTab is not initialized.")
-            return
-        end
-
-        -- Placeholder for method to get all elements; replace with actual method
-        local elements = lclTab:GetAllElements()  -- or the correct method to retrieve elements
-
-        if not elements then
-            print("Error: Could not retrieve elements.")
-            return
-        end
-
-        -- Iterate through all elements on the page
-        for _, element in pairs(elements) do
-            -- Check if the element has a title and if it matches the search text
-            if element.Title and string.match(element.Title:lower(), text:lower()) then
-                -- Highlight the element
-                element:SetBackgroundColor("yellow") -- Customize this as needed
-                element:SetVisible(true) -- Ensure element is visible
-            else
-                -- Optionally hide or unhighlight non-matching elements
-                element:SetBackgroundColor("transparent") -- Reset background color
-                element:SetVisible(false) -- Hide the element
-            end
-        end
-end,
-})
 
 
 
