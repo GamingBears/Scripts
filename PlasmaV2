@@ -29,11 +29,11 @@ do --START
 -- MAIN
 
 local Input = Tabs.Main:AddInput("Input", {
-    Title = "Gravity",
-    Description = "Edits Client's game gravity.",
+    Title = "Search",
+    Description = "",
     Default = "",
-    Placeholder = "196.2 Default",
-    Numeric = true, -- Only allows numbers
+    Placeholder = "",
+    Numeric = false, -- Only allows numbers
     Finished = true, -- Only calls callback when you press enter
     Callback = function(Value)
                -- Iterate through all elements on the page
