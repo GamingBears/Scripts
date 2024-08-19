@@ -337,14 +337,14 @@ local Button = TestTab:CreateButton({
 })
 
 Window:Prompt({
-    Title = 'Remember:',
-    SubTitle = 'Always remember to use an alt account while exploiting!',
-    Content = 'V2 has released! Join our discord server to access!',
+    Title = 'THIS SCRIPT IS NO LONGER MAINTAINED',
+    SubTitle = 'Join our server for Plasma V2',
+    Content = 'Always Exploit on alts unrelated to your main!',
     Actions = {
         Accept = {
-            Name = 'Accept',
+            Name = 'Copy Server Invite',
             Callback = function()
-                print('Pressed')
+                -- SETCLIPBOARD
             end,
         }
     }
