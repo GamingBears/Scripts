@@ -375,8 +375,16 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Build a boat for treasure",
+    Description = "Autofarm",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/main/main/RubyHub.lua", true))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Natural Disaster Survival",
-    Description = "",
+    Description = "BROKEN",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubNaturalDisasterSurvival"))()
     end
