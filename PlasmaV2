@@ -240,6 +240,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
 })
 
     Tabs.UniScripts:AddButton({
+	Title = "Nameless Admin",
+    Description = "Admin command system",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Server finder",
     Description = "In game server browser",
     Callback = function()
