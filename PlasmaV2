@@ -17,6 +17,8 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "menu" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
+    AdminScr = Window:AddTab({ Title = "Admins", Icon = "shield-ellipsis" }),
+    HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "app-window" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
     ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
@@ -37,8 +39,8 @@ do --START
     })
 
     Tabs.Main:AddParagraph({
-        Title = "Update log: Plasma V2 Update!",
-        Content = "Added some more game scripts, Currently untested from bloxscripts "
+        Title = "Update log: Regular",
+        Content = "Added a few admins and reorganised some areas"
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
@@ -224,30 +226,6 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
 -- UNIVERSAL
 
     Tabs.UniScripts:AddButton({
-    Title = "Infinite Yield",
-    Description = "A universal admin script that works on every game",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end
-})
-
-    Tabs.UniScripts:AddButton({
-	Title = "Infinite Yield Rebord",
-    Description = "Fan-made infinite yield",
-    Callback = function()
-         loadstring(game:HttpGet("https://github.com/fuckusfm/infiniteyield-reborn/raw/master/source"))()
-    end
-})
-
-    Tabs.UniScripts:AddButton({
-	Title = "Nameless Admin",
-    Description = "Admin command system",
-    Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
-    end
-})
-
-    Tabs.UniScripts:AddButton({
     Title = "Server finder",
     Description = "In game server browser",
     Callback = function()
@@ -311,9 +289,36 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     end
 })
 
-local Section = Tabs.UniScripts:AddSection("Hubs")
+-- ADMINSSS
 
-    Tabs.UniScripts:AddButton({
+    Tabs.AdminScr:AddButton({
+    Title = "Infinite Yield",
+    Description = "A universal admin script that works on every game",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+    Tabs.AdminScr:AddButton({
+	Title = "Infinite Yield Rebord",
+    Description = "Fan-made infinite yield",
+    Callback = function()
+         loadstring(game:HttpGet("https://github.com/fuckusfm/infiniteyield-reborn/raw/master/source"))()
+    end
+})
+
+    Tabs.AdminScr:AddButton({
+	Title = "Nameless Admin",
+    Description = "Admin command system",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+    end
+})
+
+
+-- HUBSSS
+
+    Tabs.HubScr:AddButton({
     Title = "DomainX Hub",
     Description = "An admin/universal command bar which has all your basic needs",
     Callback = function()
@@ -321,7 +326,7 @@ local Section = Tabs.UniScripts:AddSection("Hubs")
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
     Title = "VG Hub",
     Description = "Supports 140+ Games",
     Callback = function()
@@ -332,7 +337,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
     Title = "Reaper Hub",
     Description = "A large script which supports many games || https://discord.gg/reaperhub",
     Callback = function()
@@ -340,7 +345,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
 	Title = "Owl Hub",
     Description = "Universal/Game ESP, aimbot, silent aim and more. May not be Solara supported",
     Callback = function()
@@ -348,7 +353,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
     Title = "Orca Hub",
     Description = "Similar to domain it has everything you need for exploiting",
     Callback = function()
@@ -356,7 +361,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
     Title = "Equinox Hub",
     Description = "A very large FE script hub",
     Callback = function()
@@ -364,7 +369,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     end
 })
 
-    Tabs.UniScripts:AddButton({
+    Tabs.HubScr:AddButton({
     Title = "Venox Hub",
     Description = "A very large FE script hub",
     Callback = function()
