@@ -17,8 +17,9 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "menu" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
-    AdminScr = Window:AddTab({ Title = "Admins", Icon = "shield-ellipsis" }),
+    AdminScr = Window:AddTab({ Title = "Admin Scripts", Icon = "shield-ellipsis" }),
     HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "app-window" }),
+    FEscr = Window:AddTab({ Title = "FE Scripts", Icon = "file-code" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
     ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
@@ -374,6 +375,16 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     Description = "A very large FE script hub",
     Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/main.lua'))()
+    end
+})
+
+-- FE SCRIPTS
+
+    Tabs.FEscr:AddButton({
+    Title = "Hi",
+    Description = "Desc",
+    Callback = function()
+        print("Hi")
     end
 })
 
