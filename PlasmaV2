@@ -316,6 +316,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     end
 })
 
+    Tabs.AdminScr:AddButton({
+	Title = "Brick Admin",
+    Description = "Beta",
+    Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Brick-Admin-BETA-12105"))();
+    end
+})
+
 
 -- HUBSSS
 
