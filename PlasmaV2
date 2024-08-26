@@ -17,10 +17,10 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "menu" }),
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
-    AdminScr = Window:AddTab({ Title = "Admin Scripts", Icon = "shield" }),
-    HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "gallery-vertical" }),
+    AdminScr = Window:AddTab({ Title = "Admin Scripts", Icon = "file-lock-2" }),
+    HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "file-scan" }),
     FEscr = Window:AddTab({ Title = "FE Scripts", Icon = "file-code" }),
-    ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
+    ScriptHub = Window:AddTab({ Title = "Games", Icon = "gamepad-2" }),
     ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
