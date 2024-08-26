@@ -18,7 +18,7 @@ local Tabs = {
     LocalPlayer = Window:AddTab({ Title = "Local Player", Icon = "user-cog" }),
     UniScripts = Window:AddTab({ Title = "Universal Scripts", Icon = "globe" }),
     AdminScr = Window:AddTab({ Title = "Admin Scripts", Icon = "shield-ellipsis" }),
-    HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "app-window" }),
+    HubScr = Window:AddTab({ Title = "Hubs & GUIs", Icon = "layout-panel-left" }),
     FEscr = Window:AddTab({ Title = "FE Scripts", Icon = "file-code" }),
     ScriptHub = Window:AddTab({ Title = "Script Hub", Icon = "library" }),
     ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
