@@ -31,13 +31,25 @@ do --START
 
 -- MAIN
 
-
-
-
-    Tabs.Main:AddParagraph({
-        Title = "dsc.gg/plasmahub",
-        Content = "Be sure to join our discord server to report broken scripts!! "
-    })
+    Tabs.Main:AddButton({
+    Title = "Discord Invite",
+    Description = "Copys Discord server invite to your clipboard",
+    Callback = function()
+		Window:Dialog({
+    Title = "Copy Discord Server Key",
+    Content = "",
+    Buttons = {
+        { 
+            Title = "Copy Discord Invite!",
+            Callback = function()
+                print("You better have joined our discord ;)")
+		setclipboard("https://discord.gg/DRP9pfHrfZ")
+            end 
+        }
+    }
+})
+    end
+})
 
     Tabs.Main:AddParagraph({
         Title = "Update log: Regular",
