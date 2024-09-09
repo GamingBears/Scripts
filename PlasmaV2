@@ -52,8 +52,8 @@ do --START
 })
 
     Tabs.Main:AddParagraph({
-        Title = "Update log: Regular",
-        Content = "Added a few admins and reorganised some areas"
+        Title = "Update log: None",
+        Content = "Updates will be soon!"
     })
 
     local Keybind = Tabs.Main:AddKeybind("Keybind", {
