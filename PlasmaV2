@@ -22,8 +22,9 @@ local Tabs = {
     FEscr = Window:AddTab({ Title = "FE Scripts", Icon = "file-code" }),
     ScriptHub = Window:AddTab({ Title = "Games", Icon = "gamepad-2" }),
     ScrInfo = Window:AddTab({ Title = "Script Info", Icon = "info" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-    Credits = Window:AddTab({ Title = "Credits", Icon = "bolt" })
+    Credits = Window:AddTab({ Title = "Credits", Icon = "bolt" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+
 }
 
 local Options = Fluent.Options
@@ -636,6 +637,19 @@ Tabs.ScrInfo:AddParagraph({
 
 
 
+-- CREDITS
+
+    Tabs.Credits:AddParagraph({
+        Title = "Owner:",
+        Content = "Gamingbear_999"
+    })
+
+    Tabs.Credits:AddParagraph({
+        Title = "Script Searcher:",
+        Content = "Riner"
+    })
+
+
 -- SETTINGS
 
 
@@ -648,17 +662,6 @@ Tabs.ScrInfo:AddParagraph({
 })
 
 
--- CREDITS
-
-    Tabs.Credits:AddParagraph({
-        Title = "Owner:",
-        Content = "Gamingbear_999"
-    })
-
-    Tabs.Credits:AddParagraph({
-        Title = "Script Searcher:",
-        Content = "Riner"
-    })
 
 
 end --END
