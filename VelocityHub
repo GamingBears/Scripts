@@ -45,7 +45,7 @@ do --START
             Title = "Copy Discord Invite!",
             Callback = function()
                 print("You better have joined our discord ;)")
-		setclipboard("https://discord.gg/DRP9pfHrfZ")
+		setclipboard("https://discord.gg/Fbpce5tRy6")
             end 
         }
     }
@@ -668,12 +668,6 @@ Tabs.ScrInfo:AddParagraph({
         Content = "Gamingbear_999"
     })
 
-    Tabs.Credits:AddParagraph({
-        Title = "Script Searcher:",
-        Content = "Riner"
-    })
-
-
 -- SETTINGS
 
 
@@ -728,7 +722,7 @@ Window:Dialog({
             Title = "Copy Discord Invite!",
             Callback = function()
                 print("You better have joined our discord ;)")
-		setclipboard("https://discord.gg/abF85cPA")
+		setclipboard("https://discord.gg/Fbpce5tRy6")
             end 
         }
     }
