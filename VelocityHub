@@ -273,6 +273,14 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
 })
 
     Tabs.UniScripts:AddButton({
+    Title = "Chat Bypasser",
+    Description = "Better version",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/main/UserCreation.lua", true))()
+    end
+})
+
+    Tabs.UniScripts:AddButton({
     Title = "Ingame executor",
     Description = "An in-game executor that looks like a command prompt",
     Callback = function()
@@ -471,6 +479,25 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaxKs/gfe/main/Rivals
     end
 })
 
+
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Rivals",
+    Description = "key",
+    Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c56622b9897b159614c3e7889571afd5.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Rivals",
+    Description = "script",
+    Callback = function()
+        getgenv()["load_rewrite"] = true --// ONLY APPLIES TO PF
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dementiaenjoyer/homohack/main/loader.lua"))()
+    end
+})
+
     Tabs.ScriptHub:AddButton({
     Title = "Arsenal",
     Description = "Emblem Hub",
@@ -530,6 +557,30 @@ loadstring(http.request({
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "The Strongest Battlegrounds",
+    Description = "kj no fe",
+    Callback = function()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/7JdC3wL1"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "The Strongest Battlegrounds",
+    Description = "Tested",
+    Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "The Strongest Battlegrounds",
+    Description = "Mobile script",
+    Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Bedwars",
     Description = "Aurora [SOLARA SUPPORT]",
     Callback = function()
@@ -538,18 +589,34 @@ loadstring(http.request({
 })
 
     Tabs.ScriptHub:AddButton({
-    Title = "Bedwars VapeV4",
-    Description = "Not 100% Supported on Solara",
+    Title = "Bedwars",
+    Description = "Not 100% Supported on Solara, VapeV4",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end
 })
 
     Tabs.ScriptHub:AddButton({
-	    Title = "Bedwars Aether Client",
-    Description = "Solara supported",
+	    Title = "Bedwars",
+    Description = "Vape voidware",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+	    Title = "Bedwars",
+    Description = "Solara supported, Aether Client",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CakScripts/AetherClientBW/main/MainScript", true))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+	    Title = "Bedwars",
+    Description = "AIsploit",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript"))()
     end
 })
 
@@ -569,13 +636,43 @@ end
     end
 })
 
-
+    Tabs.ScriptHub:AddButton({
+    Title = "Criminality",
+    Description = "criminology",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Coolmandfgfgdvcgfg/criminology/main/criminology.lua"))()
+    end
+})
 
     Tabs.ScriptHub:AddButton({
     Title = "Blade Ball Auto Parry",
     Description = "Nexam Hub [Luarmor] verified",
     Callback = function()
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6af56c1753ac6679dee3acbd1fd952e5.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Blade Ball",
+    Description = "script",
+    Callback = function()
+        loadstring(game:HttpGet(“https://raw.githubusercontent.com/LOLking123456/Blade/main/Ball”))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Blade Ball",
+    Description = "auto parry",
+    Callback = function()
+        loadstring(game:HttpGet(“https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly”))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Death Ball",
+    Description = "script",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.luarmor.net/verified/godhubloader.lua"))()
     end
 })
 
@@ -603,7 +700,21 @@ end
     end
 })
 
+    Tabs.ScriptHub:AddButton({
+    Title = "MM2",
+    Description = "script",
+    Callback = function()
+	loadstring(game:HttpGet("https://www.cloudbin.org/love"))()
+    end
+})
 
+    Tabs.ScriptHub:AddButton({
+    Title = "Combat Warriors",
+    Description = "Use carefully",
+    Callback = function()
+	loadstring(game:HttpGet("https://pastefy.app/50B4Z9UK/raw"))()
+    end
+})
 
     Tabs.ScriptHub:AddButton({
     Title = "Break In 1",
