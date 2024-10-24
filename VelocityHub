@@ -587,6 +587,23 @@ end
     end
 })
 
+    Tabs.ScriptHub:AddButton({
+    Title = "Blox Fruits",
+    Description = "script",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CheemsNhuChiAl/MinGamingHub/main/mingamingupdatenew"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Blox Fruits",
+    Description = "keyless",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
+    end
+})
+
+
 
     Tabs.ScriptHub:AddButton({
     Title = "Break In 1",
