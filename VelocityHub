@@ -421,6 +421,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Decaying Winter",
+    Description = "Uses outdated rayfield",
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MrWhite1110/Decaying-Winter-Op-Script-V2/main/Decaying%20Winter%20Op%20script'))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Build a boat for treasure",
     Description = "Autofarm",
     Callback = function()
