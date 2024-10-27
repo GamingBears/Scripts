@@ -369,6 +369,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
 })
 
     Tabs.HubScr:AddButton({
+    Title = "Zen Hub",
+    Description = "A large script which supports many games",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
     Title = "Reaper Hub",
     Description = "A large script which supports many games || https://discord.gg/reaperhub",
     Callback = function()
