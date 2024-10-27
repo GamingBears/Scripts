@@ -656,7 +656,7 @@ end
     Title = "Blade Ball",
     Description = "script",
     Callback = function()
-        loadstring(game:HttpGet(“https://raw.githubusercontent.com/LOLking123456/Blade/main/Ball”))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Blade/main/Ball"))()
     end
 })
 
@@ -664,7 +664,7 @@ end
     Title = "Blade Ball",
     Description = "auto parry",
     Callback = function()
-        loadstring(game:HttpGet(“https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly”))()
+        loadstring(game:HttpGet(“https://raw.githubusercontent.com/Code4Zaaa/X7Project/main/Game/AutoParryOnly"))()
     end
 })
 
