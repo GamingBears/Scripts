@@ -346,6 +346,13 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
     end
 })
 
+    Tabs.AdminScr:AddButton({
+	Title = "Polar Admin GUI",
+    Description = "Beta",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/DaCoderMane/MyRobloxScripts/main/PolarAdminGUI.lua",true))()
+    end
+})
 
 -- HUBSSS
 
@@ -375,6 +382,8 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
     end
 })
+
+
 
     Tabs.HubScr:AddButton({
     Title = "Reaper Hub",
@@ -416,7 +425,127 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
     end
 })
 
+    Tabs.HubScr:AddButton({
+    Title = "Quotas Hub",
+    Description = "OP",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Nut Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Omen Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))() 
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Sky Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://scriptblox.com/raw/3008-2.73-teleport-to-player-worker-esp-grab-food-no-fall-damage-12949"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Shifescript Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/x0Yp0gSM"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "MilenioX Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nearz1/Milenio-X-Hub/main/Key%20System%20On%20Top"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Kobra Hub",
+    Description = "Has decent scripts",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/flinqx/KobraHub/main/Roblox"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Gamer Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "QP Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomUserRay/QPScriptHub/main/Loader.lua"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Ghost Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "A Hub",
+    Description = "Doesnt have a name, has a good script for a dusty trip",
+    Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/Lightux/main/README.md'),true))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Visual Hub",
+    Description = "Lua armored",
+    Callback = function()
+	 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "Humidity Hub",
+    Description = "",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterLol-Bot/The-Best-Hubs/main/Hub%20The%20Best%20Hub%20Humisty"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
+    Title = "",
+    Description = "",
+    Callback = function()
+	
+    end
+})
+
 -- FE SCRIPTS
+
+    Tabs.FEscr:AddButton({
+    Title = "FE Trolling Hub",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+    end
+})
 
     Tabs.FEscr:AddButton({
     Title = "Hi",
@@ -438,7 +567,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 
     Tabs.ScriptHub:AddButton({
     Title = "Decaying Winter",
-    Description = "Uses outdated rayfield",
+    Description = "Uses outdated rayfield, works well",
     Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/MrWhite1110/Decaying-Winter-Op-Script-V2/main/Decaying%20Winter%20Op%20script'))()
     end
