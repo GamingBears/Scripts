@@ -530,13 +530,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 })
 
     Tabs.HubScr:AddButton({
+    Title = "Velocity Hub",
+    Description = "of course",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingBears/Scripts/main/VelocityHub"))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
     Title = "",
     Description = "",
     Callback = function()
 	
     end
 })
-
 -- FE SCRIPTS
 
     Tabs.FEscr:AddButton({
