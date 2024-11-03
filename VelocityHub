@@ -85,6 +85,16 @@ do --START
     end
 })
 
+    Tabs.Main:AddButton({
+    Title = "sUNC Test",
+    Description = "Does a sUNC test and prints executor level in output press (F9)",
+    Callback = function()
+loadstring(game:HttpGet("https://gitlab.com/sens3/nebunu/-/raw/main/HummingBird8's_sUNC_yes_i_moved_to_gitlab_because_my_github_acc_got_brickedd/sUNCm0m3n7.lua"))()
+	wait(6)
+	print("Executor level:") printidentity()
+    end
+})
+
 -- LOCAL PLAYER
 
     Tabs.LocalPlayer:AddButton({
