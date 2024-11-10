@@ -367,10 +367,18 @@ local Section = Tabs.LocalPlayer:AddSection("Other Universal Local Player Script
 -- HUBSSS
 
     Tabs.HubScr:AddButton({
+    Title = "Sirius",
+    Description = "An admin/universal command bar which everything including scriptblox api. DomainX on crack",
+    Callback = function()
+        loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+    end
+})
+
+    Tabs.HubScr:AddButton({
     Title = "DomainX Hub",
     Description = "An admin/universal command bar which has all your basic needs",
     Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))()--
+        loadstring(game:HttpGet('https://pastebin.com/raw/YqD1TpgD'))()
     end
 })
 
