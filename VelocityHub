@@ -573,6 +573,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/venoxhh/venoxV1/main/
 })
 
     Tabs.FEscr:AddButton({
+    Title = "FE Arsenal Sunglasses",
+    Description = "Givea your character sunglasses everyone can see 😎",
+    Callback = function()
+        while wait() do game:GetService("ReplicatedStorage").Events.Sunglasses:FireServer() end
+    end
+})
+
+    Tabs.FEscr:AddButton({
     Title = "Hi",
     Description = "Desc",
     Callback = function()
