@@ -635,6 +635,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MrWhite1110/Decaying-
     Description = "Sped Hub X",
     Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/hFDKfNZg"))()
+end
 })
 
     Tabs.ScriptHub:AddButton({
