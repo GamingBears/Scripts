@@ -623,6 +623,21 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/MrWhite1110/Decaying-
 })
 
     Tabs.ScriptHub:AddButton({
+    Title = "Fisch",
+    Description = "Forge Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+    end
+})
+
+    Tabs.ScriptHub:AddButton({
+    Title = "Fisch",
+    Description = "Sped Hub X",
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hFDKfNZg"))()
+})
+
+    Tabs.ScriptHub:AddButton({
     Title = "Hellmet ESP",
     Description = "This can also be used as a universal ESP. Can't be turned off",
     Callback = function()
@@ -965,8 +980,6 @@ Tabs.ScrInfo:AddParagraph({
     Content = "The Strongest Battlegrounds\nAnime Fighters Simulator\nHide and Seek Extreme\nArm Wrestle Simulator\nToilet Tower Defense\nJujutsu Shenanigans\nLegends of Speed\nDungeon Quest\n+1 Blade Slayer\nEat the World\nA Dusty Trip\nPull a Sword\nGym League\nSlap Battles\nType Soul"
 })
 
-
-
 -- CREDITS
 
     Tabs.Credits:AddParagraph({
@@ -980,6 +993,14 @@ Tabs.ScrInfo:AddParagraph({
     Tabs.Settings:AddButton({
     Title = "Print Test",
     Description = "Prints text in the output",
+    Callback = function()
+        print("Execution working!")
+    end
+})
+
+    Tabs.Settings:AddButton({
+    Title = "Bear's Favourite Scripts",
+    Description = "Sirius, Infinite Yield.",
     Callback = function()
         print("Execution working!")
     end
