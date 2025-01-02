@@ -42,3 +42,19 @@ local HubScr = Window:CreateTab("Hubs & GUIs") -- Title, Image
 local FEscr = Window:CreateTab("FE Scripts") -- Title, Image
 local ScriptHub = Window:CreateTab("Games") -- Title, Image
 local Settings = Window:CreateTab("Custom Settings") -- Title, Image
+
+-- Home --
+local Button = Tab:CreateButton({
+   Name = "Copy Discord Server",
+   Callback = function()
+     setclipboard("https://discord.gg/Fbpce5tRy6")
+
+Rayfield:Notify({
+   Title = "Notification Title",
+   Content = "Notification Content",
+   Duration = 6.5,
+   Image = "clipboard-copy",
+})
+
+   end,
+})
